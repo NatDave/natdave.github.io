@@ -1,7 +1,7 @@
 ---
 title: "CIVE 4566: Design for Sustainable Transportation: Netherlands (TA)"
 collection: teaching
-type: "study abroad program"
+type: "Study abroad program"
 permalink: /teaching/2024-summer-school
 venue: "Technische Universiteit Delft, The Netherlands"
 date: 2024-06-28
