@@ -21,7 +21,7 @@ Education
 
 Certifications
 ======
-*	Engineer-in-Training (EIT) - FE Civil – [(Verify)](https://www.credly.com/badges/35f81516-e8ec-40a4-ad6c-beb2d54a2894)
+*	Engineer-in-Training (EIT), FE Civil – [(Verify)](https://www.credly.com/badges/35f81516-e8ec-40a4-ad6c-beb2d54a2894)
 <br>
 Massachusetts Board of Registration of Professional Engineers and Professional Land Surveyors
 
