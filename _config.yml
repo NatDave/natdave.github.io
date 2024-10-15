@@ -1,6 +1,6 @@
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "About"
+title                    : "NatDave"
 title_separator          : "-"
 name                     : &name "Nathan David Obeng-Amoako"
 description              : &description "PhD Transportation Engineering student at Northeastern University"
