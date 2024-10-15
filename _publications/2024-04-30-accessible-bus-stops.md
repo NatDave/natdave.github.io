@@ -3,11 +3,11 @@ title: "Accessible Bus Stop Design in the Presence of Bike Lanes"
 collection: publications
 category: conferences
 permalink: /publication/accessible-bus-stops
-excerpt: 'Raveling, the loss of aggregate from chip seal surfaces, poses significant maintenance challenges and economic burdens for road agencies, especially in developing countries. This study explores the use of locally available waste materials, such as ground-tire rubber (GTR), as sustainable bitumen modifiers to mitigate raveling, finding that GTR-modified bitumen significantly reduces aggregate loss under adverse conditions, making it a viable alternative for improving chip seal performance.'
+excerpt: 'Floating bus stops, adjacent to bike lanes, require bus passengers to cross the bike lane to board or alight, creating challenges, especially for visually impaired and wheelchair users. This study examined different floating bus stop designs in Greater Boston, analyzing rider behavior and conflicts with bicyclists, and provides design recommendations to improve accessibility and safety.'
 date: 2023-04-25
-venue: '3rd IRF Africa Regional Congress & Exhibition'
-slidesurl: 'http://natdave.github.io/files/bitumen_modification_IRF_slides.pdf'
-citation: 'Nathan David Obeng-Amoako, Arthur Louis Senaya, Bundu Kassim, Francisca Owusu-Ansah, Eugene Damoah, Santus Worclachie, and Kenneth A. Tutu. (April 2023). &quot;Modification of Bitumen with Waste Materials for Enhanced Aggregate Retention in Surface-Dressed Roads.&quot; <i>3rd IRF Africa Regional Congress & Exhibition</i>: Accra, Ghana'
+venue: '2024 MassDOT Transportation Innovation Conference'
+slidesurl: 'http://natdave.github.io/files/accessible_bus_stop_poster.pdf'
+citation: ' Yu-Min (Thomas) Yang, Dewan Tanvir Ahammed, Nathan David Obeng-Amoako, Eleni Christofa, Chengbo Ai, Peter Furth (April 2024). &quot;Accessible Bus Stop Design in the Presence of Bike Lanes.&quot; <i>2024 MassDOT Transportation Innovation Conference.</i>: Worcester, MA.'
 ---
 
 The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
