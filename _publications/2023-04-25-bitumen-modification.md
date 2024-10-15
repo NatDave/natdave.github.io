@@ -2,7 +2,7 @@
 title: "Modification of Bitumen with Waste Materials for Enhanced Aggregate Retention in Surface-Dressed Roads"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/bitumen-modification
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2023-04-25
 venue: 'Journal 1'
