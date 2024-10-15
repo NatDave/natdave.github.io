@@ -1,10 +1,11 @@
 ---
 permalink: /
-title: "About Me"
+title: "Nathan David Obeng-Amoako"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+social_image: "natdave.github.io/images/headshot.jpg"
 ---
 I am deeply committed to improving transportation systems with a focus on enhancing safety, efficiency, and sustainability. My work focuses on optimizing traffic signal systems to reduce congestion, improve traffic flow, and minimize emissions, creating smarter and more responsive cities. By refining public transit systems, I strive to make them more reliable, accessible, and efficient, thereby encouraging greater public adoption and reducing dependency on private vehicles.
 
