@@ -1,15 +1,10 @@
 ---
-title: "Summer School Teaching/Program Assistant"
+title: "CIVE 4566: Design for Sustainable Transportation: Netherlands (TA)"
 collection: teaching
-type: "Undergraduate course"
+type: "study abroad program"
 permalink: /teaching/2024-summer-school
-venue: "Northeastern University, Civil and Environmental Engineering"
+venue: "Technische Universiteit Delft, The Netherlands"
 date: 2024-06-28
-location: "Technische Universiteit Delft, The Netherlands"
+location: "Delft, The Netherlands"
 ---
-
-• Assisted in teaching sustainable urban transportation concepts with a focus on Dutch practices
-<br>
-• Inspired students to adopt transportation strategies that promote car-free urban mobility
-<br>
-• Explored safe street designs and bike path infrastructure in several Dutch cities
+Assisted in teaching Vision Zero traffic safety principles and design treatments for safe roads, intersections, and crossings; and high-quality transit service planning and design. Other topics explored are traffic-circulation planning and policies to promote safety, prevent roads from becoming barriers to walking, cycling, or transit, and to create car-free and car-lite zones.
