@@ -14,8 +14,8 @@ redirect_from:
 
 Here is my CV displayed below:
 
-<iframe src="files/cv.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please <a href="files/cv.pdf">download the PDF</a>.
+<iframe src="https://natdave.github.io/files/cv.pdf" width="100%" height="600px">
+    This browser does not support PDFs. Please <a href="https://natdave.github.io/files/cv.pdf">download the PDF</a>.
 </iframe>
 
 
