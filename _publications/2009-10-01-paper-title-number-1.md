@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2023-04
+date: 2023-04-25
 venue: 'Journal 1'
 slidesurl: 'http://natdave.github.io/files/bitumen_modification_IRF_slides.pdf'
 paperurl: 'http://natdave.github.io/files/bitumen_modification_IRF_abstract.pdf'
