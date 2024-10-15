@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Nathan David Obeng-Amoako, EIT"
+title: "Nathan David Obeng-Amoako"
 author_profile: true
 redirect_from: 
   - /about/
