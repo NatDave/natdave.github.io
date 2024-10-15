@@ -1,7 +1,7 @@
 ---
 title: "CIVE 2222: Recitation for Statics and Solid Mechanics"
 collection: teaching
-type: "undergraduate course"
+type: "Undergraduate course"
 permalink: /teaching/2023-statics
 venue: "Northeastern University, Boston, MA"
 date: 2024-09-04
