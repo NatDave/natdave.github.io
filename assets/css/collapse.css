@@ -1,17 +1,27 @@
 .container {
-    width:100%;
-    border:1px solid #d3d3d3;
+    width: 100%;
+    border: 1px solid #d3d3d3;
 }
+
 .container div {
-    width:100%;
+    width: 100%;
 }
+
 .container .header {
-    background-color:#d3d3d3;
+    background-color: #d3d3d3;
     padding: 2px;
     cursor: pointer;
     font-weight: bold;
 }
+
 .container .content {
-    display: none;
-    padding : 5px;
+    display: none; /* Hidden by default */
+    padding: 5px;
+}
+
+/* Ensure all sections are displayed on mobile devices */
+@media (max-width: 768px) {
+    .container .content {
+        display: block; /* Show content on mobile */
+    }
 }
