@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 1"
+title: "Modification of Bitumen with Waste Materials for Enhanced Aggregate Retention in Surface-Dressed Roads"
 collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
