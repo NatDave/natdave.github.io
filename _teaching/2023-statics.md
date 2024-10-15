@@ -1,5 +1,5 @@
 ---
-title: "CIVE 2222: Recitation for Statics and Solid Mechanics"
+title: "CIVE 2222: Recitation for Statics & Solid Mechanics"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2023-statics
