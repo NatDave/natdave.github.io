@@ -21,13 +21,13 @@ Education
 
 Certifications
 ======
-*	Engineer-in-Training (EIT) certification (FE Civil) – [(Verify)](https://www.credly.com/badges/35f81516-e8ec-40a4-ad6c-beb2d54a2894)
+*	Engineer-in-Training (EIT) - FE Civil – [(Verify)](https://www.credly.com/badges/35f81516-e8ec-40a4-ad6c-beb2d54a2894)
 <br>
 Massachusetts Board of Registration of Professional Engineers and Professional Land Surveyors
 
-View my full CV (last updated 09/2024) [here](natdave.github.io/files/cv.pdf).
+View my full CV (last updated 09/2024) [here](https://natdave.github.io/files/cv.pdf).
 
 Feel free to explore more of my work and get in touch:
 - [GitHub](https://github.com/natdave)
-- [LinkedIn](http://www.linkedin.com/in/natdave/)
+- [LinkedIn](https://www.linkedin.com/in/natdave/)
 - [Email](mailto:natdave545@gmail.com)
