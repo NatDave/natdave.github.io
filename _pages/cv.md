@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "CV"
+subtitle: "Download a full version of my CV [here](docs/NatDave_updated_CV.pdf)"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,6 +9,17 @@ redirect_from:
 ---
 
 {% include base_path %}
+
+
+# My PDF Document
+
+Here is the embedded PDF:
+
+<iframe src="docs/yourfile.pdf" width="100%" height="600px">
+    This browser does not support PDFs. Please <a href="natdave.github.io/files/cv.pdf">download the PDF</a>.
+</iframe>
+
+
 
 Education
 ======
