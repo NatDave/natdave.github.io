@@ -6,4 +6,9 @@ author_profile: true
 ---
 
 <div class="wordwrap">You can also access my full GitHub profile <a href="https://github.com/natdave>here</a>.</div>
+                                                                   
 {% include base_path %}
+                                                                  
+{% for post in site.github %}
+  {% include archive-single.html %}
+{% endfor %}
