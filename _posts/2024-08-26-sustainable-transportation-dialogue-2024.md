@@ -1,7 +1,7 @@
 ---
 title: 'PhD Student Reflects on the Sustainable Transportation Dialogue of Civilizations in Holland'
 date: 2024-08-26
-permalink: /posts/2024/08/sustainable-transportation-dialogue-2024/
+permalink: /blog-posts/2024/08/sustainable-transportation-dialogue-2024/
 tags:
   - sustainable transportation
   - summer school
