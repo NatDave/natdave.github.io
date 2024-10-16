@@ -17,7 +17,7 @@ Education
 ======
 * Ph.D. in Transportation Engineering, Northeastern University, Boston, MA - 2028 (expected)
 * M.S. in Transportation Engineering, Northeastern University, Boston, MA - 2025 (expected)
-* B.Sc. in Civil Engineering, Kwame Nkrumah University of Science and Technology, Kumasi, Ghana - 2022
+* B.Sc. in Civil Engineering, Kwame Nkrumah University of Science and Technology (KNUST), Kumasi, Ghana - 2022
 
 Certifications
 ======
