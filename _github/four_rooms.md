@@ -5,4 +5,4 @@ excerpt: "The Four-Room Reinforcement Learning (RL) problem is a classic grid-wo
 collection: github
 ---
 
-You can access the GitHub repository for this project [here](https://github.com/NatDave/RL/).<br/><img src='/images/four_rooms.png'>
+You can access the GitHub repository for this project [here](https://github.com/NatDave/RL/).<br/><br/><img src='/images/four_rooms.png'>
