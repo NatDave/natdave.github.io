@@ -8,5 +8,5 @@ date: 2024-04-25
 venue: '2024 MassDOT Transportation Innovation Conference'
 paperurl: 'http://natdave.github.io/files/accessible_bus_stop_abstract.pdf'
 slidesurl: 'http://natdave.github.io/files/accessible_bus_stop_poster.pdf'
-citation: ' Yu-Min (Thomas) Yang, Dewan Tanvir Ahammed, Nathan David Obeng-Amoako, Eleni Christofa, Chengbo Ai, Peter Furth (April 2024). &quot;Accessible Bus Stop Design in the Presence of Bike Lanes.&quot; <i>2024 MassDOT Transportation Innovation Conference.</i>: Worcester, MA.'
+citation: ' Yu-Min (Thomas) Yang, Dewan Tanvir Ahammed, Nathan David Obeng-Amoako, Eleni Christofa, Chengbo Ai, Peter Furth (April 2024). &quot;Accessible Bus Stop Design in the Presence of Bike Lanes.&quot; <i>MassDOT Transportation Innovation Conference.</i>: Worcester, MA.'
 ---
