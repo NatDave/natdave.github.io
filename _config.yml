@@ -211,6 +211,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  github:
+    output: true
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
