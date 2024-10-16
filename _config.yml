@@ -260,6 +260,15 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _github
+  - scope:
+      path: ""
+      type: github
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
   # _portfolio
   - scope:
       path: ""
