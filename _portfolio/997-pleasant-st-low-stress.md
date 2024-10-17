@@ -5,4 +5,4 @@ excerpt: "The plan aimed to improve the Pleasant Street neighborhood by removing
 collection: portfolio
 slidesurl: 'https://natdave.github.io/files/pleasant_st.pdf'
 ---
-<img src='/images/pleasant_st.jpg' alt="Pleasant Street Neighborhood">
+<img src='/images/pleasant_st.jpg' alt="Download slides">
