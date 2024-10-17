@@ -5,4 +5,4 @@ excerpt: "On Route 39, the MBTA’s fourth-busiest bus route, buses experience a
 collection: portfolio
 ---
 
-You can read the full post [here](https://peterfurth.sites.northeastern.edu/2024/06/04/bus-friendly-traffic-signals-can-reduce-bus-delay-by-90-on-south-huntington-avenue/).
+<p>You can read the full post <a href="https://peterfurth.sites.northeastern.edu/2024/06/04/bus-friendly-traffic-signals-can-reduce-bus-delay-by-90-on-south-huntington-avenue/">here</a>.</p>
