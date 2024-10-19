@@ -1,8 +1,8 @@
 ---
-title: "Four Rooms Reinforcement Learning Problem"
+title: "Regression-Based Trip Prediction Algorithm (in progress)"
 permalink: /github/four-rooms
-excerpt: "The Four-Room Reinforcement Learning (RL) problem is a classic grid-world environment where an agent navigates through four interconnected rooms, separated by narrow doorways. The agent must learn optimal policies to reach a goal state from any starting position, using actions like moving up, down, left, or right. The problem is designed to challenge exploration and learning efficiency, as the agent encounters varying rewards and obstacles, requiring it to balance exploration and exploitation while navigating through a structured, partitioned space.<br/><img src='/images/four_rooms.png'>" 
+excerpt: "Some Bluebikes stations experience an influx of incoming bikes, leading to congestion, while others deplete quickly, resulting in a lack of available bikes; this analysis seeks to provide insights that optimize bike distribution and enhance operational efficiency for bike-sharing systems. The trip prediction algorithm aims to accurately estimate trip durations and destination stations by leveraging historical trip data.<br/><img src='/images/blue_bikes.png'>" 
 collection: github
 ---
 
-You can access the GitHub repository for this project [here](https://github.com/NatDave/RL/).<br/><br/><img src='/images/four_rooms.png'>
+You can access the GitHub repository for this project [here](https://github.com/NatDave/IE6200/).<br/><br/><img src='/images/blue_bikes.png'>
