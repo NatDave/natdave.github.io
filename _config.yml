@@ -7,7 +7,7 @@ description              : &description "PhD Transportation Engineering student 
 url                      : https://natdave.github.io
 baseurl                  : ""
 repository               : "natdave.github.io"
-social_image             : "natdave.github.io/images/headshot.jpg"
+social_image             : "natdave.github.io/images/hey.jpg"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -15,9 +15,9 @@ social_image             : "natdave.github.io/images/headshot.jpg"
 author:
   # Biographic information
   avatar           : "headshot.jpg"
-  name             : "Nathan David Obeng-Amoako"
+  name             : "Vanessa Owusu Ansah"
   pronouns         : # example: "he/him"  
-  bio              : "PhD Transportation Engineering student at Northeastern University, Boston, MA"
+  bio              : "PhD Economics student at Northeastern University, Boston, MA"
   location         : "Boston, MA, USA"
   employer         : "Northeastern University"
   uri              : # URL
@@ -47,7 +47,7 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : # "natdave"
+  instagram        : "natdave"
   lastfm           : # Username
   linkedin         : "natdave"
   mastodon         : # URL
