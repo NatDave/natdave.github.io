@@ -1,11 +1,11 @@
 ---
-title: "Assessing the Impact of Electric Bikes on Urban Mobility: A Case Study of Boston’s Bluebikes"
+title: "XGBoost-Driven Demand Prediction for Optimized Electric Vehicle Charging Recommendations"
 collection: publications
 category: term_papers
-permalink: /publication/IE6200-bluebikes
-excerpt: "I conducted a detailed analysis of Bluebikes (the public bike share system in the Metro Boston area) data to understand how the introduction of electric bicycles influences transportation choices and urban dynamics. By applying various statistical models, I assessed the shifts in demand for public bike-sharing systems, examining factors such as user preferences and usage patterns."
-date: 2024-10-15
+permalink: /publication/ev-charging
+excerpt: "Developing a demand prediction model for electric vehicle charging stations using the Adaptive Charging Network (ACN) dataset from Caltech, leveraging advanced machine learning algorithms. The results were then used to develop a recommender system to help EV users minimize charging costs."
+date: 2024-10-23
 venue: "GitHub Repository"
 ---
 
-You can access the GitHub repository for this project [here](https://github.com/NatDave/ie6200/).<br/><br/><img src='/images/blue_bikes.png'>
+You can access the GitHub repository for this project [here](https://github.com/NatDave/cive7381/).<br/><br/><img src='/images/blue_bikes.png'>
