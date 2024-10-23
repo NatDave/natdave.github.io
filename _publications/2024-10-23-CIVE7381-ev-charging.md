@@ -8,4 +8,4 @@ date: 2024-10-23
 venue: "GitHub Repository"
 ---
 
-You can access the GitHub repository for this project [here](https://github.com/NatDave/cive7381/).<br/><br/><img src='/images/blue_bikes.png'>
+You can access the GitHub repository for this project [here](https://github.com/NatDave/cive7381/).<br/><br/><img src='/images/ev.jpg'>
