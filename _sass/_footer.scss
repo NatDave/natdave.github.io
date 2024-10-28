@@ -3,6 +3,8 @@
    ========================================================================== */
 
 .page__footer {
+  height: 100px; // Sets a fixed height
+  min-height: 100px; // Ensures the footer is at least 100px high
   @include clearfix;
   float: left;
   margin-left: 0;
