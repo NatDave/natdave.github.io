@@ -1,8 +1,8 @@
 ---
 title: "Four Rooms Reinforcement Learning Problem"
 permalink: /github/four-rooms
-excerpt: "The Four-Room Reinforcement Learning (RL) problem is a classic grid-world environment where an agent navigates through four interconnected rooms, separated by narrow doorways. The agent must learn optimal policies to reach a goal state from any starting position, using actions like moving up, down, left, or right. The problem is designed to challenge exploration and learning efficiency, as the agent encounters varying rewards and obstacles, requiring it to balance exploration and exploitation while navigating through a structured, partitioned space.<br/><img src='/images/four_rooms.png'>" 
+excerpt: "Bicycle Level of Traffic Stress (LTS) is a framework that measures how comfortable a road feels for cyclists, with levels ranging from LTS 1 (low-stress, suitable for most cyclists) to LTS 4 (high-stress, requiring high confidence). Crossing Level of Traffic Stress (xLTS) evaluates the comfort and safety for cyclists at intersections or crossings, considering factors like volume and speed of the traffic being crossed, crossing distance, presence of a bike signal, crossing island, RRFB, etc., to rate the stress level Many cyclists feel anxious about crossing busy intersections, regardless of how comfortable the road segment is. By including xLTS, we can better understand the overall comfort level for cyclists, leading to more informed infrastructure decisions.<br/><img src='/images/four_rooms.png'>" 
 collection: github
 ---
 
-You can access the GitHub repository for this project [here](https://github.com/NatDave/RL/).<br/><br/><img src='/images/four_rooms.png'>
+You can access the GitHub repository for this project [here](https://github.com/NatDave/lts/).<br/><br/><img src='/images/four_rooms.png'>
