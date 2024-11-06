@@ -1,15 +1,14 @@
 ---
-title: 'PhD Student Reflects on the Sustainable Transportation Dialogue of Civilizations in Holland'
-date: 2024-08-26
-permalink: /blog-posts/2024/08/sustainable-transportation-dialogue-2024/
+title: 'JPM/YPT Montréal Greater Boston Area Bike Tour'
+date: 2024-10-26
+permalink: /blog-posts/2024/10/ypt-montreal-greater-boston-bike-tour/
 tags:
-  - sustainable transportation
-  - summer school
-  - holland
+  - boston
+  - cambridge
+  - somerville
   - cycling
 ---
+I led a group of around 30 transportation engineers, city planners, and other professionals from Jeunes Professionnels en Mobilité / Young Professionals in Transportation Montréal on a bike tour across the Greater Boston Area. Starting in Boston and biking through Cambridge and Somerville, we explored new cycling infrastructure in these cities. We discussed policies like the Cycling Safety Ordinance by the City of Cambridge and the Safe Streets Ordinance by the City of Somerville, which aim to improve safety and accessibility for all road users, including cyclists and pedestrians. The tour highlighted the impressive progress in cycling infrastructure and how much has changed over the past decade.
+<br/><img src='/images/ypt_montreal.jpg'>
 
-In my experience during the summer course in the Netherlands, I was deeply inspired by the country's commitment to sustainable transportation, particularly its cycling culture. The Dutch approach combines innovative infrastructure with a strong emphasis on safety and accessibility, creating an environment where cycling is the norm rather than an exception. This transformative experience instilled in me a renewed sense of responsibility and optimism about reshaping urban transportation in the U.S. to be safer, more sustainable, and inclusive for all users.
-<br/><img src='/images/holland_2024.jpg'>
-
-You can read the full post [here](https://coe.northeastern.edu/news/a-reflection-on-the-sustainable-transportation-dialogue-of-civilizations-course-in-holland/).
+You can read the organization's LinkedIn post here [here](https://www.linkedin.com/posts/jpm-ypt-montr%C3%A9al_mobility-ypt-boston-activity-7259922225556856832-mj1m?utm_source=share&utm_medium=member_desktop).
