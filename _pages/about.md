@@ -9,7 +9,7 @@ social_image: "natdave.github.io/images/headshot.jpg"
 ---
 NatDave is deeply committed to improving transportation systems with a focus on enhancing safety, efficiency, and sustainability.
 
-Part of his work focuses on optimizing traffic signal systems to reduce congestion, improve traffic flow, and minimize emissions, creating smarter and more responsive cities. By refining public transit systems through the implementation of strategeties like smart transit signal priority, he strives to make them more reliable and efficient, thereby encouraging greater public adoption and reducing dependency on private vehicles.
+Part of his work focuses on optimizing traffic signal control systems to reduce congestion, improve traffic flow, and minimize emissions, creating smarter and more responsive cities. By refining public transit systems through the implementation of strategies like smart transit signal priority, he strives to make them more reliable and efficient, thereby encouraging greater public adoption and reducing dependency on private vehicles.
 
 Additionally, he has a particularly keen interest in promoting active transportation modes, such as cycling, to foster healthier communities and reduce environmental impacts. His expertise also extends to traffic demand modeling, where he analyzes and predicts traffic patterns to design infrastructure that meets the evolving needs of urban environments.
 
@@ -27,7 +27,7 @@ Certifications
 <br>
 Massachusetts Board of Registration of Professional Engineers and Professional Land Surveyors
 
-View my full CV (last updated 09/2024) [here](https://natdave.github.io/files/cv.pdf).
+View my full CV (last updated 10/2024) [here](https://natdave.github.io/files/cv.pdf).
 
 Feel free to explore more of my work and get in touch:
 - [GitHub](https://github.com/natdave)
