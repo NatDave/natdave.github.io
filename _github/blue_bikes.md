@@ -5,4 +5,4 @@ excerpt: "The addition of electric bikes to Boston's Bluebikes system has likely
 collection: github
 ---
 
-You can access the GitHub repository for this project [here](https://github.com/NatDave/blue-bikes/).<br/><br/><img src='/images/blue_bikes.png'>
+You can access the GitHub repository for this project [here](https://github.com/NatDave/blue-bikes/).<br/><br/><img src='/images/blue_bike.png'>
