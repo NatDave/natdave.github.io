@@ -5,4 +5,4 @@ excerpt: "Some Bluebikes stations experience an influx of incoming bikes, leadin
 collection: github
 ---
 
-You can access the GitHub repository for this project [here](https://github.com/NatDave/IE6200/).<br/><br/><img src='/images/blue_bikes.png'>
+You can access the GitHub repository for this project [here](https://github.com/NatDave/blue-bikes/).<br/><br/><img src='/images/blue_bikes.png'>
