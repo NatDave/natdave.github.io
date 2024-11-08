@@ -1,7 +1,7 @@
 ---
-title: "Regression-Based Trip Prediction Algorithm"
+title: "Impact of Electric Bikes on Trip Dynamics and System Efficiency"
 permalink: /github/blue-bikes
-excerpt: "Some Bluebikes stations experience an influx of incoming bikes, leading to congestion, while others deplete quickly, resulting in a lack of available bikes; this analysis seeks to provide insights that optimize bike distribution and enhance operational efficiency for bike-sharing systems. The trip prediction algorithm aims to accurately estimate trip durations and destination stations by leveraging historical trip data.<br/><img src='/images/blue_bikes.png'>" 
+excerpt: "The addition of electric bikes to Boston's Bluebikes system has likely changed trip dynamics, such as trip durations, demand patterns, and station usage. This analysis aims to explore how e-bikes have affected these factors, looking at differences in trip lengths, popular routes, and station turnover. By comparing e-bike trips with traditional bike trips, the goal is to understand how e-bikes have impacted overall system performance and user behavior. These insights will help inform strategies for improving bike distribution and optimizing the efficiency of the bike-sharing system.<br/><img src='/images/blue_bikes.png'>" 
 collection: github
 ---
 
