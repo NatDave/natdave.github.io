@@ -29,7 +29,7 @@ Massachusetts Board of Registration of Professional Engineers and Professional L
 
 View my full CV (last updated 10/2024) [here](https://natdave.github.io/files/cv.pdf).
 
-![](./images/office.jpg)
+![](/images/office.jpg)
 
 Feel free to explore more of my work and get in touch:
 - [GitHub](https://github.com/natdave)
