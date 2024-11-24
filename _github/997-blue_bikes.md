@@ -1,7 +1,8 @@
 ---
-title: "Impact of Electric Bikes on Trip Dynamics and System Efficiency"
+title: "Evaluating the Impact of E-Bike Integration on BlueBikes Ridership Patterns Using
+Machine Learning and Computer Vision"
 permalink: /github/blue-bikes
-excerpt: "The addition of electric bikes to Boston's Bluebikes system has likely changed trip dynamics, such as trip durations, demand patterns, and station usage. This analysis aims to explore how e-bikes have affected these factors, looking at differences in trip lengths, popular routes, and station turnover. By comparing e-bike trips with traditional bike trips, the goal is to understand how e-bikes have impacted overall system performance and user behavior. These insights will help inform strategies for improving bike distribution and optimizing the efficiency of the bike-sharing system.<br/><img src='/images/blue_bike.png'>" 
+excerpt: "The introduction of electric bikes to Boston's BlueBikes system has likely altered trip dynamics, including trip durations, demand patterns, and station usage. This analysis explores the impact of e-bikes on these factors, focusing on differences in trip lengths, popular routes, station turnover, and mode choice between electric and traditional bikes. By comparing e-bike trips with traditional bike trips, the goal is to understand how e-bikes influence overall system performance, user behavior, and mode preferences. These insights will help inform strategies for optimizing bike distribution and enhancing the efficiency of the bike-sharing system.<br/><img src='/images/blue_bike.png'>"
 collection: github
 ---
 
