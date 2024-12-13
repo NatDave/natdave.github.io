@@ -10,4 +10,4 @@ slidesurl: 'https://natdave.github.io/files/ev-charging-slides.pdf'
 paperurl: 'https://natdave.github.io/files/ev-charging-report.pdf'
 ---
 
-You can access the GitHub repository for this project [here](https://github.com/NatDave/xgboost-ev-charging).<br/><br/><img src='/images/ev.png'>
+You can access the GitHub repository for this project [here](https://github.com/NatDave/xgboost-ev-charging).
