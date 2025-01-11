@@ -8,4 +8,4 @@ collection: github
 
 Test out this [sleep tracker](https://natdave.github.io/sleep-tracker) in your web browser.
 
-You can also access the GitHub repository for this project [here](https://github.com/NatDave/blue-bikes/).<br/><br/><img src='/images/blue_bike.png'>
+You can also access the GitHub repository for this project [here](https://github.com/NatDave/blue-bikes/).<br/><br/><img src='/images/sleep.png'>
