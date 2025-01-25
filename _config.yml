@@ -70,11 +70,13 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
+  reports:
+    title: 'Research Reports'
   conferences:
     title: 'Conference Papers'
   term_papers:
-    title: 'Graduate-Level Term Papers'
+    title: 'Term Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
