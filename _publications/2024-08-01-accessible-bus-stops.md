@@ -7,6 +7,6 @@ excerpt: 'Floating bus stops, adjacent to bike lanes, require bus passengers to 
 date: 2024-08-01
 venue: 'Office of Transportation Planning, Massachusetts Department of Transportation'
 paperurl: 'https://natdave.github.io/files/accessible-bus-stop-report.pdf'
-slidesurl: 'https://natdave.github.io/files/accessible_bus_stop_poster.pdf'
+slidesurl: 'https://natdave.github.io/files/accessible-bus_stop-poster.pdf'
 citation: ' Eleni Christofa, Chengbo Ai, Peter Furth, Yu-Min (Thomas) Yang, Dewan Tanvir Ahammed, Nathan David Obeng-Amoako (August 2024). &quot;Accessible Bus Stop Design in the Presence of Bike Lanes.&quot; <i>Office of Transportation Planning, Massachusetts, Department of Transportation.</i> Boston, MA.'
 ---
