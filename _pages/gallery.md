@@ -35,21 +35,21 @@ Explore images and visuals from various categories, including Summer School, Pos
 
 ---
 
-## Summer School
+## Summer School 🌞  
 Highlights from our exciting summer school program in The Netherlands.
 
 <div class="gallery-section">
   <div class="gallery-title">Delft, The Netherlands (2024)</div>
   <div class="gallery-images">
-    <img src="/images/summer1.jpg" alt="Summer Event 1">
-    <img src="/images/summer2.jpg" alt="Summer Event 2">
-    <img src="/images/summer3.jpg" alt="Summer Event 3">
+    {% for i in (1..15) %}
+      <img src="/images/holland/2024_netherlands{{ i }}.jpg" alt="Summer Event {{ i }}">
+    {% endfor %}
   </div>
 </div>
 
 ---
 
-## Posters 
+## Posters 📜  
 Check out some of our latest research posters.
 
 <div class="gallery-section">
