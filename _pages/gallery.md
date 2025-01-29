@@ -39,7 +39,7 @@ Explore images and visuals from various some events.
 Highlights from our exciting annual summer school program in The Netherlands.
 
 <div class="gallery-section">
-  <div class="gallery-title">Delft, The Netherlands (2024)</div>
+  <div class="gallery-title">The Netherlands (2024)</div>
   <div class="gallery-images">
     {% for i in (1..15) %}
       <img src="/images/holland/2024_netherlands{{ i }}.jpg" alt="Summer School 2024 {{ i }}">
