@@ -14,17 +14,21 @@ main:
   - title: "CV"
      url: /cv/
 
+  - title: "Blog Posts"
+    url: /blog-posts/
+
+  - title: "Teaching"
+    url: /teaching/
+  
   #- title: "Talks"
   #   url: /talks/     
     
   #- title: "Portfolio"
   #  url: /portfolio/
         
-  - title: "Blog Posts"
-    url: /blog-posts/
 
-  - title: "Teaching"
-    url: /teaching/
+
+
     
   # - title: "Guide"
   #   url: /markdown/
