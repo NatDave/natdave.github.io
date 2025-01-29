@@ -35,7 +35,7 @@ Each summer, he serves as a program assistant for a sustainable transportation s
 
 ## 🎖 Certifications  
 
-| 📜 Certification | 🏛 Issuing Authority | 🔗 Verification |
+| Certification | Issuing Authority | Verification |
 |-----------------|---------------------|---------------|
 | **Engineer-in-Training (EIT), FE Civil** | Massachusetts Board of Registration of Professional Engineers and Land Surveyors | [Verify Credential](https://www.credly.com/badges/35f81516-e8ec-40a4-ad6c-beb2d54a2894) |
 
