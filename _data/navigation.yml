@@ -20,11 +20,13 @@ main:
   - title: "Blog Posts"
     url: /blog-posts/
 
+  - title: "Gallery"
+    url: /gallery/
 
   
   #- title: "Talks"
   #   url: /talks/     
-    
+  
   #- title: "Portfolio"
   #  url: /portfolio/
 
