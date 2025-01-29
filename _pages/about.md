@@ -25,7 +25,7 @@ Certifications
 <br>
 Massachusetts Board of Registration of Professional Engineers and Professional Land Surveyors
 
-View my full CV [here](https://natdave.github.io/files/cv.pdf).
+View my full CV [here](https://natdave.github.io/files/NatDave_CV.pdf).
 
 Feel free to explore more of my work and get in touch:
 - [GitHub](https://github.com/natdave)
