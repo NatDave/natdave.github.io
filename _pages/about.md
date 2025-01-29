@@ -8,7 +8,10 @@ redirect_from:
 social_image: "natdave.github.io/images/headshot.jpg"
 ---
 
-NatDave is dedicated to enhancing transportation systems by prioritizing safety, efficiency, and sustainability. He optimizes traffic signal control to alleviate congestion and improve traffic flow, contributing to smarter cities. By implementing strategies like smart transit signal priority, he improves the reliability and efficiency of public transit, encouraging its use and decreasing reliance on private vehicles.
+NatDave is dedicated to enhancing transportation systems by prioritizing safety, efficiency, and sustainability.
+
+## 🚦 Traffic Signal Optimization & Smart Transit Priority
+NatDave specializes in optimizing traffic signal control to alleviate congestion and improve traffic flow, playing a key role in developing smarter cities. By implementing strategies like smart transit signal priority, he enhances the reliability and efficiency of public transit systems. These improvements encourage greater public transit use while reducing dependence on private vehicles, leading to more sustainable and accessible urban mobility.
 
 ## 🤖 AI & ML in Transportation  
 Leveraging his strong background in statistics, NatDave is actively exploring and researching on machine learning and artificial intelligence applications in transportation. He believes these technologies are crucial for developing advanced mobility solutions, including real-time traffic management systems.
@@ -16,7 +19,7 @@ Leveraging his strong background in statistics, NatDave is actively exploring an
 ## 🚴‍♂️ Active Transportation & Sustainability  
 NatDave is deeply passionate about promoting active transportation modes like cycling to create healthier communities and reduce environmental impact. He has cycled thousands of miles across the USA and hundreds of miles in many other countries including Canada and the Netherlands.  
 
-Each summer, he serves as a program assistant for a sustainable transportation*study abroad program, accompanying Northeastern University students to the Netherlands. There, they explore integrated cycling infrastructure, efficient public transit networks, and strategic urban planning.  
+Each summer, he serves as a program assistant for a sustainable transportation study abroad program, accompanying Northeastern University students to the Netherlands. There, they explore integrated cycling infrastructure, efficient public transit networks, and strategic urban planning.  
 
 ---
 
