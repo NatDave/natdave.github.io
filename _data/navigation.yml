@@ -12,7 +12,7 @@ main:
     url: /github/
 
   - title: "CV"
-     url: /cv/
+    url: /cv/
 
   - title: "Blog Posts"
     url: /blog-posts/
