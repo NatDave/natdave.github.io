@@ -4,7 +4,7 @@ title: "Gallery"
 permalink: /gallery/
 ---
 
-Explore images and visuals from various some events.
+Explore images and visuals from some of our events.
 
 <style>
   .gallery-section {
