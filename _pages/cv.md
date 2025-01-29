@@ -17,9 +17,12 @@ last_updated: "January 2025"
     </p>
 </div>
 
+<!-- Container to make PDF scrollable -->
 <div style="display: flex; justify-content: center;">
-    <iframe src="https://natdave.github.io/files/NatDaveCV.pdf" width="90%" height="700px" style="border: 1px solid #ccc; border-radius: 5px;">
-        Your browser does not support PDFs.
-        Please <a href="https://natdave.github.io/files/NatDaveCV.pdf">download the PDF here</a>.
-    </iframe>
+    <div style="width: 90%; height: 700px; overflow: auto; border: 1px solid #ccc; border-radius: 5px;">
+        <iframe src="https://natdave.github.io/files/NatDaveCV.pdf" width="100%" height="100%" style="border: none;">
+            Your browser does not support PDFs.
+            Please <a href="https://natdave.github.io/files/NatDaveCV.pdf">download the PDF here</a>.
+        </iframe>
+    </div>
 </div>
