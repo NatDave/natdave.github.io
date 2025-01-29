@@ -8,7 +8,7 @@ redirect_from:
 social_image: "natdave.github.io/images/headshot.jpg"
 ---
 
-NatDave is dedicated to enhancing transportation systems by prioritizing safety, efficiency, and sustainability.
+NatDave is passionate about revolutionizing transportation systems by prioritizing safety, efficiency, and sustainability, shaping smarter, more connected cities.
 
 ## 🚦 Traffic Signal Optimization & Smart Transit Priority
 NatDave specializes in optimizing traffic signal control to alleviate congestion and improve traffic flow, playing a key role in developing smarter cities. By implementing strategies like smart transit signal priority, he enhances the reliability and efficiency of public transit systems. These improvements encourage greater public transit use while reducing dependence on private vehicles, leading to more sustainable and accessible urban mobility.
@@ -34,15 +34,20 @@ Each summer, he serves as a program assistant for a sustainable transportation s
 ---
 
 ## 🎖 Certifications  
-- Engineer-in-Training (EIT), FE Civil – [Verify Credential](https://www.credly.com/badges/35f81516-e8ec-40a4-ad6c-beb2d54a2894)  
-  *Massachusetts Board of Registration of Professional Engineers and Professional Land Surveyors*  
+
+| 📜 Certification | 🏛 Issuing Authority | 🔗 Verification |
+|-----------------|---------------------|---------------|
+| **Engineer-in-Training (EIT), FE Civil** | Massachusetts Board of Registration of Professional Engineers and Land Surveyors | [Verify Credential](https://www.credly.com/badges/35f81516-e8ec-40a4-ad6c-beb2d54a2894) |
 
 ---
 
-## 📜 Explore More  
-📄 [View My Full CV](https://natdave.github.io/files/NatDaveCV.pdf)  
+## 📄 My CV  
+**[View Full CV](https://natdave.github.io/files/NatDaveCV.pdf)**
 
-📂 Connect with me:  
-- 💻 [GitHub](https://github.com/natdave)  
-- 👔 [LinkedIn](https://www.linkedin.com/in/natdave/)  
-- 📧 [Email](mailto:natdave545@gmail.com)  
+## 🌐 Connect with Me  
+
+| 🌍 Platform | 🔗 Link |
+|------------|--------|
+| 💻 **GitHub** | [github.com/natdave](https://github.com/natdave) |
+| 👔 **LinkedIn** | [linkedin.com/in/natdave](https://www.linkedin.com/in/natdave/) |
+| 📧 **Email** | [natdave545@gmail.com](mailto:natdave545@gmail.com) |
