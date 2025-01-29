@@ -18,7 +18,7 @@ last_updated: "January 2025"
 </div>
 
 <div style="display: flex; justify-content: center;">
-    <iframe src="https://natdave.github.io/files/cv.pdf" width="90%" height="700px" style="border: 1px solid #ccc; border-radius: 5px;">
+    <iframe src="https://natdave.github.io/files/NatDaveCV.pdf" width="90%" height="700px" style="border: 1px solid #ccc; border-radius: 5px;">
         Your browser does not support PDFs.
         Please <a href="https://natdave.github.io/files/NatDaveCV.pdf">download the PDF here</a>.
     </iframe>
