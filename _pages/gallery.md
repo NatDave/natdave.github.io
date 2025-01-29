@@ -4,7 +4,7 @@ title: "Gallery"
 permalink: /gallery/
 ---
 
-Explore images and visuals from various categories, including Summer School, Posters, and more.
+Explore images and visuals from various some events.
 
 <style>
   .gallery-section {
@@ -36,7 +36,7 @@ Explore images and visuals from various categories, including Summer School, Pos
 ---
 
 ## Summer School
-Highlights from our exciting summer school program in The Netherlands.
+Highlights from our exciting annual summer school program in The Netherlands.
 
 <div class="gallery-section">
   <div class="gallery-title">Delft, The Netherlands (2024)</div>
@@ -44,20 +44,6 @@ Highlights from our exciting summer school program in The Netherlands.
     {% for i in (1..15) %}
       <img src="/images/holland/2024_netherlands{{ i }}.jpg" alt="Summer School 2024 {{ i }}">
     {% endfor %}
-  </div>
-</div>
-
----
-
-## Posters
-Check out some of our latest research posters.
-
-<div class="gallery-section">
-  <div class="gallery-title">Posters</div>
-  <div class="gallery-images">
-    <img src="/images/poster1.jpg" alt="Poster 1">
-    <img src="/images/poster2.jpg" alt="Poster 2">
-    <img src="/images/poster3.jpg" alt="Poster 3">
   </div>
 </div>
 
