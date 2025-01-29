@@ -24,9 +24,12 @@ Each summer, he serves as a program assistant for a sustainable transportation s
 ---
 
 ## 🎓 Education  
-- Ph.D. in Transportation Engineering, Northeastern University, Boston, MA *(Expected 2028)*  
-- M.S. in Transportation Engineering, Northeastern University, Boston, MA *(2025)*  
-- B.Sc. in Civil Engineering, Kwame Nkrumah University of Science and Technology (KNUST), Kumasi, Ghana *(2022)*  
+
+| Degree | Institution | Location | Year |
+|---------|----------------|------------|------|
+| **Ph.D. in Transportation Engineering** *(Expected)* | Northeastern University | Boston, MA | 2028 |
+| **M.S. in Transportation Engineering** | Northeastern University | Boston, MA | 2025 |
+| **B.Sc. in Civil Engineering** | Kwame Nkrumah University of Science and Technology (KNUST) | Kumasi, Ghana | 2022 |
 
 ---
 
