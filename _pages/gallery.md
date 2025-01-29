@@ -5,7 +5,7 @@ permalink: /gallery/
 ---
 
 # Gallery 🎨  
-Welcome to the gallery! Explore images and visuals from various categories, including **Summer School**, **Posters**, and more.
+Explore images and visuals from various categories, including Summer School, Posters, and more.
 
 <style>
   .gallery-section {
@@ -37,14 +37,14 @@ Welcome to the gallery! Explore images and visuals from various categories, incl
 ---
 
 ## Summer School 🌞
-Explore highlights from our exciting summer school programs.
+Highlights from our exciting summer school program in The Netherlands.
 
 <div class="gallery-section">
   <div class="gallery-title">Summer School 2024</div>
   <div class="gallery-images">
-    <img src="/assets/images/summer1.jpg" alt="Summer Event 1">
-    <img src="/assets/images/summer2.jpg" alt="Summer Event 2">
-    <img src="/assets/images/summer3.jpg" alt="Summer Event 3">
+    <img src="/images/summer1.jpg" alt="Summer Event 1">
+    <img src="/images/summer2.jpg" alt="Summer Event 2">
+    <img src="/images/summer3.jpg" alt="Summer Event 3">
   </div>
 </div>
 
@@ -56,23 +56,9 @@ Check out some of our latest research posters.
 <div class="gallery-section">
   <div class="gallery-title">Posters</div>
   <div class="gallery-images">
-    <img src="/assets/images/poster1.jpg" alt="Poster 1">
-    <img src="/assets/images/poster2.jpg" alt="Poster 2">
-    <img src="/assets/images/poster3.jpg" alt="Poster 3">
-  </div>
-</div>
-
----
-
-## Workshops & Conferences 🛠️  
-Relive the best moments from our workshops and conferences.
-
-<div class="gallery-section">
-  <div class="gallery-title">Workshops</div>
-  <div class="gallery-images">
-    <img src="/images/workshop1.jpg" alt="Workshop 1">
-    <img src="/images/workshop2.jpg" alt="Workshop 2">
-    <img src="/images/workshop3.jpg" alt="Workshop 3">
+    <img src="/images/poster1.jpg" alt="Poster 1">
+    <img src="/images/poster2.jpg" alt="Poster 2">
+    <img src="/images/poster3.jpg" alt="Poster 3">
   </div>
 </div>
 
