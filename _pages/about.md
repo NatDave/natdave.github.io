@@ -11,9 +11,9 @@ social_image: "natdave.github.io/images/headshot.jpg"
 NatDave is passionate about revolutionizing transportation systems by prioritizing safety, efficiency, and sustainability, shaping smarter, more connected cities.
 
 ## 🚦 Traffic Signal Optimization & Smart Transit Priority
-NatDave specializes in optimizing traffic signal control to alleviate congestion and improve traffic flow, playing a key role in developing smarter cities. By implementing strategies like smart transit signal priority, he enhances the reliability and efficiency of public transit systems. These improvements encourage greater public transit use while reducing dependence on private vehicles, leading to more sustainable and accessible urban mobility.
+NatDave specializes in optimizing traffic signal control to alleviate congestion and improve traffic flow. By implementing strategies like smart transit signal priority, he enhances the reliability and efficiency of public transit systems. These improvements encourage greater public transit use while reducing dependence on private vehicles, leading to lower emissions, less congestion, and a more sustainable, resilient urban transportation network.
 
-## 🤖 AI & ML in Transportation  
+## 🤖 AI & ML/DL in Transportation  
 Leveraging his strong background in statistics, NatDave is actively exploring and researching on machine learning and artificial intelligence applications in transportation. He believes these technologies are crucial for developing advanced mobility solutions, including real-time traffic management systems.
 
 ## 🚴‍♂️ Active Transportation & Sustainability  
@@ -27,8 +27,8 @@ Each summer, he serves as a program assistant for a sustainable transportation s
 
 | Degree | Institution | Location | Year |
 |---------|----------------|------------|------|
-| **Ph.D. in Transportation Engineering** *(Expected)* | Northeastern University | Boston, MA | 2028 |
-| **M.S. in Transportation Engineering** | Northeastern University | Boston, MA | 2025 |
+| **Ph.D. in Transportation Engineering** *(Expected)* | Northeastern University | Boston, MA, USA | 2028 |
+| **M.S. in Transportation Engineering** | Northeastern University | Boston, MA, USA | 2025 |
 | **B.Sc. in Civil Engineering** | Kwame Nkrumah University of Science and Technology (KNUST) | Kumasi, Ghana | 2022 |
 
 ---
@@ -37,7 +37,7 @@ Each summer, he serves as a program assistant for a sustainable transportation s
 
 | Certification | Issuing Authority | Verification |
 |-----------------|---------------------|---------------|
-| **Engineer-in-Training (EIT), FE Civil** | Massachusetts Board of Registration of Professional Engineers and Land Surveyors | [Verify Credential](https://www.credly.com/badges/35f81516-e8ec-40a4-ad6c-beb2d54a2894) |
+| **Engineer-in-Training (EIT) - FE Civil** | Massachusetts Board of Registration of Professional Engineers and Land Surveyors | [Verify Credential](https://www.credly.com/badges/35f81516-e8ec-40a4-ad6c-beb2d54a2894) |
 
 ---
 
