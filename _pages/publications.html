@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <style>
-/* Ensure publication cards take full width and prevent premature text wrapping */
+/* Ensure the container uses full width */
 .publication-card {
   background: #f9f9f9;
   border-left: 5px solid #0073e6;
@@ -14,22 +14,31 @@ author_profile: true
   margin-bottom: 15px;
   border-radius: 5px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Ensures full width */
+  width: 100%; /* Ensure the card stretches full width */
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* Makes sure text stretches across the card */
+  align-items: stretch;
+  box-sizing: border-box; /* Prevents width issues */
 }
 
-/* Prevent premature text wrapping */
+/* Ensure parent containers do not constrain width */
 .publication-card h3,
 .publication-card p,
 .publication-card a {
   display: block;
   width: 100%;
-  white-space: normal; /* Allow text to fill full width */
-  word-wrap: break-word; /* Break long words if needed */
-  overflow-wrap: break-word; /* Ensures long text doesn't overflow */
-  text-align: justify; /* Align text for better distribution */
+  max-width: 100%; /* Ensures no unnecessary wrapping */
+  white-space: normal; /* Allows natural text flow */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: justify; /* Helps distribute text evenly */
+}
+
+/* Override any restrictive margin rules */
+.publication-card * {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Improve readability */
 }
 
 .publication-card a {
@@ -45,7 +54,7 @@ author_profile: true
 
 {% if site.author.googlescholar %}
 <div class="wordwrap">
-  You can also access my <a href="{{site.author.googlescholar}}" target="_blank">Google Scholar profile</a>.
+  📖 You can also access my <a href="{{site.author.googlescholar}}" target="_blank">Google Scholar profile</a>.
 </div>
 {% endif %}
 
@@ -60,7 +69,7 @@ author_profile: true
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2>
+        <h2>📚 {{ category[1].title }}</h2>
         <hr />
         {% assign title_shown = true %}
       {% endunless %}
