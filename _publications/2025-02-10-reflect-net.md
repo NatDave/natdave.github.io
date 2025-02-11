@@ -1,5 +1,5 @@
 ---
-title: "Accessible Bus Stop Design in the Presence of Bike Lanes"
+title: "Sign-Aware Attention-Based Multitasking Framework for Integrated Traffic Sign Detection and Retroreflectivity Estimation"
 collection: publications
 category: reports
 permalink: /publication/accessible-bus-stops
