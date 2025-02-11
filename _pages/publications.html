@@ -5,32 +5,62 @@ permalink: /publications/
 author_profile: true
 ---
 
+<style>
+/* Styling for a cleaner, modern look */
+.publication-card {
+  background: #f9f9f9;
+  border-left: 5px solid #0073e6;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.publication-card h3 {
+  margin-top: 0;
+}
+
+.publication-card a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.publication-card a:hover {
+  text-decoration: underline;
+}
+</style>
+
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also access my Google scholar profile <a href="{{site.author.googlescholar}}">here</a>.</div>
+<div class="wordwrap">
+  📖 You can also access my <a href="{{site.author.googlescholar}}" target="_blank">Google Scholar profile</a>.
+</div>
 {% endif %}
 
 {% include base_path %}
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
+        <h2>📚 {{ category[1].title }}</h2>
+        <hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      <div class="publication-card">
+        {% include archive-single.html %}
+      </div>
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    <div class="publication-card">
+      {% include archive-single.html %}
+    </div>
   {% endfor %}
 {% endif %}
-
-
-
