@@ -33,7 +33,7 @@ author_profile: true
 
 {% if site.author.googlescholar %}
 <div class="wordwrap">
-  📖 You can also access my <a href="{{site.author.googlescholar}}" target="_blank">Google Scholar profile</a>.
+  You can also access my <a href="{{site.author.googlescholar}}" target="_blank">Google Scholar profile</a>.
 </div>
 {% endif %}
 
@@ -48,7 +48,7 @@ author_profile: true
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2>📚 {{ category[1].title }}</h2>
+        <h2>{{ category[1].title }}</h2>
         <hr />
         {% assign title_shown = true %}
       {% endunless %}
