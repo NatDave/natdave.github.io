@@ -7,5 +7,4 @@ excerpt: 'We propose SAAM-ReflectNet, a deep learning framework that automates t
 date: 2025-02-10
 venue: 'Preprint submitted to Expert Systems with Applications'
 paperurl: 'https://natdave.github.io/files/publications/reflectnet.pdf'
-slidesurl: 'https://natdave.github.io/files/publications/reflectnet.pdf'
 ---
