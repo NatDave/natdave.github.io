@@ -1,11 +1,11 @@
 ---
 title: "Sign-Aware Attention-Based Multitasking Framework for Integrated Traffic Sign Detection and Retroreflectivity Estimation"
 collection: publications
-category: reports
-permalink: /publication/accessible-bus-stops
-excerpt: 'Floating bus stops, adjacent to bike lanes, require bus passengers to cross the bike lane to board or alight, creating challenges, especially for visually impaired and wheelchair users. This study examined different floating bus stop designs in Greater Boston, analyzing rider behavior and conflicts with bicyclists, and provides design recommendations to improve accessibility and safety.'
-date: 2024-08-01
-venue: 'Office of Transportation Planning, Massachusetts Department of Transportation'
-paperurl: 'https://natdave.github.io/files/accessible-bus-stop-report.pdf'
-slidesurl: 'https://natdave.github.io/files/accessible-bus_stop-poster.pdf'
+category: manuscripts
+permalink: /publication/reflectnet
+excerpt: 'We propose SAAM-ReflectNet, a deep learning framework that automates traffic sign detection, classification, and retroreflectivity estimation by integrating robust spatial-semantic feature extraction, Sign-Aware Attention, and multimodal fusion of RGB and LiDAR data. Achieving a mean Average Precision (mAP) of 0.635 and RMSEs of 0.169 (foreground) and 0.147 (background), ReflectNet demonstrates scalability and accuracy, making it ideal for large-scale, proactive traffic sign maintenance.'
+date: 2024-02-10
+venue: 'Preprint submitted to Expert Systems with Applications'
+paperurl: 'https://natdave.github.io/files/publications/reflectnet.pdf'
+slidesurl: 'https://natdave.github.io/files/publications/reflectnet.pdf'
 ---
