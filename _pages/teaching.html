@@ -5,8 +5,72 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<style>
+/* Center content for better readability */
+.teaching-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+/* Section title styling */
+.teaching-header {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Course card layout */
+.course-card {
+  background: #f9f9f9;
+  border-left: 5px solid #0073e6;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.course-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #0073e6;
+}
+
+.course-card p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.course-card a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.course-card a:hover {
+  text-decoration: underline;
+}
+</style>
+
+<div class="teaching-container">
+  <h1 class="teaching-header">📚 Teaching Portfolio</h1>
+  
+  <p style="text-align: center; font-size: 18px; color: #555;">
+    Below is a selection of the courses I have taught, highlighting my commitment to 
+    fostering student engagement and academic excellence.
+  </p>
+
+  <hr>
+
+  {% include base_path %}
+
+  {% for post in site.teaching reversed %}
+    <div class="course-card">
+      {% include archive-single.html %}
+    </div>
+  {% endfor %}
+</div>
