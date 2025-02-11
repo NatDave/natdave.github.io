@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <style>
-/* Styling for a cleaner, modern look */
+/* Ensure publication cards take full width and prevent premature text wrapping */
 .publication-card {
   background: #f9f9f9;
   border-left: 5px solid #0073e6;
@@ -17,28 +17,29 @@ author_profile: true
   width: 100%; /* Ensures full width */
   display: flex;
   flex-direction: column;
+  align-items: stretch; /* Makes sure text stretches across the card */
 }
 
-.publication-card h3 {
-  margin-top: 0;
-  white-space: normal; /* Allows text to take full width */
+/* Prevent premature text wrapping */
+.publication-card h3,
+.publication-card p,
+.publication-card a {
+  display: block;
+  width: 100%;
+  white-space: normal; /* Allow text to fill full width */
+  word-wrap: break-word; /* Break long words if needed */
+  overflow-wrap: break-word; /* Ensures long text doesn't overflow */
+  text-align: justify; /* Align text for better distribution */
 }
 
 .publication-card a {
   color: #0073e6;
   text-decoration: none;
   font-weight: bold;
-  white-space: normal; /* Prevents unnecessary wrapping */
-  word-wrap: break-word; /* Ensures long words break properly */
 }
 
 .publication-card a:hover {
   text-decoration: underline;
-}
-
-.publication-card p {
-  white-space: normal; /* Ensures paragraph text uses full width */
-  word-wrap: break-word;
 }
 </style>
 
