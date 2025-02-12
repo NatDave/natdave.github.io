@@ -26,7 +26,7 @@ NatDave is a transportation engineering researcher and engineer dedicated to sha
 
 <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s;">
   <a href="#" style="text-decoration: none; color: inherit;">
-    <img src="https://natdave.github.io/images/ai.png" alt="AI & ML in Transportation" style="width: 100%; height: auto;">
+    <img src="https://natdave.github.io/images/about/ai.png" alt="AI & ML in Transportation" style="width: 100%; height: auto;">
     <div style="padding: 15px;">
       <h3 style="margin: 0;">AI & ML/DL in Transportation</h3>
       <p style="font-size: 14px; color: #555;">Applying machine learning and AI to real-time traffic management and mobility solutions.</p>
