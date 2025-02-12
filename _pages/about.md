@@ -7,7 +7,8 @@ redirect_from:
   - /about.html
 social_image: "natdave.github.io/images/headshot.jpg"
 ---
-Nathan David Obeng-Amoako, commonly known as NatDave, is a transportation engineering researcher and engineer dedicated to shaping the next generation of intelligent, efficient, and sustainable mobility systems. His work spans traffic signal optimization, AI-powered transportation solutions, and active mobility advocacy, ensuring cities are more connected, resilient, and people-friendly.  
+
+NatDave is a transportation engineering researcher and engineer dedicated to shaping the next generation of intelligent, efficient, and sustainable mobility systems. His work spans traffic signal optimization, AI-powered transportation solutions, active mobility advocacy, and transit operations management, ensuring cities are more connected, resilient, and people-friendly.  
 
 ## Traffic Signal Optimization & Smart Transit Priority
 NatDave specializes in optimizing traffic signal control to alleviate congestion and improve traffic flow. By implementing strategies like smart transit signal priority, he enhances the reliability and efficiency of public transit systems. These improvements encourage greater public transit use while reducing dependence on private vehicles, leading to lower emissions, less congestion, and a more sustainable, resilient urban transportation network.
