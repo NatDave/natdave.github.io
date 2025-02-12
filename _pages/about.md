@@ -5,7 +5,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-social_image: "natdave.github.io/images/headshot.jpg"
+social_image: "https://natdave.github.io/images/headshot.jpg"
 ---
 
 NatDave is a transportation engineering researcher and engineer dedicated to shaping the next generation of intelligent, efficient, and sustainable mobility systems. His work spans traffic signal optimization, AI-powered transportation solutions, active mobility advocacy, and transit operations management, ensuring cities are more connected, resilient, and people-friendly.  
@@ -16,7 +16,7 @@ NatDave is a transportation engineering researcher and engineer dedicated to sha
 
 <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s;">
   <a href="#" style="text-decoration: none; color: inherit;">
-    <img src="https://www.natdave.github.io/images/headshot.jpg" alt="Traffic Signal Optimization" style="width: 100%; height: auto;">
+    <img src="https://natdave.github.io/images/headshot.jpg" alt="Traffic Signal Optimization" style="width: 100%; height: auto;">
     <div style="padding: 15px;">
       <h3 style="margin: 0;">Traffic Signal Optimization & Smart Transit Priority</h3>
       <p style="font-size: 14px; color: #555;">Enhancing traffic flow and public transit reliability with smart signal control strategies.</p>
@@ -26,7 +26,7 @@ NatDave is a transportation engineering researcher and engineer dedicated to sha
 
 <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s;">
   <a href="#" style="text-decoration: none; color: inherit;">
-    <img src="https://www.natdave.github.io/images/headshot.jpg" alt="AI & ML in Transportation" style="width: 100%; height: auto;">
+    <img src="https://natdave.github.io/images/headshot.jpg" alt="AI & ML in Transportation" style="width: 100%; height: auto;">
     <div style="padding: 15px;">
       <h3 style="margin: 0;">AI & ML/DL in Transportation</h3>
       <p style="font-size: 14px; color: #555;">Applying machine learning and AI to real-time traffic management and mobility solutions.</p>
@@ -36,7 +36,7 @@ NatDave is a transportation engineering researcher and engineer dedicated to sha
 
 <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s;">
   <a href="#" style="text-decoration: none; color: inherit;">
-    <img src="https://www.natdave.github.io/images/headshot.jpg" alt="Active Transportation & Sustainability" style="width: 100%; height: auto;">
+    <img src="https://natdave.github.io/images/headshot.jpg" alt="Active Transportation & Sustainability" style="width: 100%; height: auto;">
     <div style="padding: 15px;">
       <h3 style="margin: 0;">Active Transportation & Sustainability</h3>
       <p style="font-size: 14px; color: #555;">Promoting cycling and sustainable mobility to create healthier, eco-friendly communities.</p>
