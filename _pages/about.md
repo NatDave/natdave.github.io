@@ -10,16 +10,41 @@ social_image: "natdave.github.io/images/headshot.jpg"
 
 NatDave is a transportation engineering researcher and engineer dedicated to shaping the next generation of intelligent, efficient, and sustainable mobility systems. His work spans traffic signal optimization, AI-powered transportation solutions, active mobility advocacy, and transit operations management, ensuring cities are more connected, resilient, and people-friendly.  
 
-## Traffic Signal Optimization & Smart Transit Priority
-NatDave specializes in optimizing traffic signal control to alleviate congestion and improve traffic flow. By implementing strategies like smart transit signal priority, he enhances the reliability and efficiency of public transit systems. These improvements encourage greater public transit use while reducing dependence on private vehicles, leading to lower emissions, less congestion, and a more sustainable, resilient urban transportation network.
+## Research Areas  
 
-## AI & ML/DL in Transportation  
-Leveraging his strong background in statistics, NatDave is actively exploring and researching on machine learning and artificial intelligence applications in transportation. He believes these technologies are crucial for developing advanced mobility solutions, including real-time traffic management systems.
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
 
-## Active Transportation & Sustainability  
-NatDave is deeply passionate about promoting active transportation modes like cycling to create healthier communities and reduce environmental impact. He has cycled thousands of miles across the USA and hundreds of miles in many other countries including Canada and the Netherlands.  
+<div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s;">
+  <a href="#" style="text-decoration: none; color: inherit;">
+    <img src="natdave.github.io/images/headshot.jpg" alt="Traffic Signal Optimization" style="width: 100%; height: auto;">
+    <div style="padding: 15px;">
+      <h3 style="margin: 0;">Traffic Signal Optimization & Smart Transit Priority</h3>
+      <p style="font-size: 14px; color: #555;">Enhancing traffic flow and public transit reliability with smart signal control strategies.</p>
+    </div>
+  </a>
+</div>
 
-Each summer, he serves as a program assistant for a sustainable transportation study abroad program, accompanying Northeastern University students to the Netherlands. There, they explore integrated cycling infrastructure, efficient public transit networks, and strategic urban planning.  
+<div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s;">
+  <a href="#" style="text-decoration: none; color: inherit;">
+    <img src="natdave.github.io/images/headshot.jpg" alt="AI & ML in Transportation" style="width: 100%; height: auto;">
+    <div style="padding: 15px;">
+      <h3 style="margin: 0;">AI & ML/DL in Transportation</h3>
+      <p style="font-size: 14px; color: #555;">Applying machine learning and AI to real-time traffic management and mobility solutions.</p>
+    </div>
+  </a>
+</div>
+
+<div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s;">
+  <a href="#" style="text-decoration: none; color: inherit;">
+    <img src="natdave.github.io/images/headshot.jpg" alt="Active Transportation & Sustainability" style="width: 100%; height: auto;">
+    <div style="padding: 15px;">
+      <h3 style="margin: 0;">Active Transportation & Sustainability</h3>
+      <p style="font-size: 14px; color: #555;">Promoting cycling and sustainable mobility to create healthier, eco-friendly communities.</p>
+    </div>
+  </a>
+</div>
+
+</div>
 
 ---
 
@@ -44,10 +69,10 @@ Each summer, he serves as a program assistant for a sustainable transportation s
 ## My CV  
 **[View Full CV](https://natdave.github.io/files/NatDaveCV.pdf)**
 
-## 🌐 Connect with Me  
+## Connect with Me  
 
-| 🌍 Platform | 🔗 Link |
+| Platform | Link |
 |------------|--------|
-| 💻 **GitHub** | [github.com/natdave](https://github.com/natdave) |
-| 👔 **LinkedIn** | [linkedin.com/in/natdave](https://www.linkedin.com/in/natdave/) |
-| 📧 **Email** | [natdave545@gmail.com](mailto:natdave545@gmail.com) |
+| **GitHub** | [github.com/natdave](https://github.com/natdave) |
+| **LinkedIn** | [linkedin.com/in/natdave](https://www.linkedin.com/in/natdave/) |
+| **Email** | [natdave545@gmail.com](mailto:natdave545@gmail.com) |
