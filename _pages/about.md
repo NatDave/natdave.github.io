@@ -11,7 +11,7 @@ social_image: "https://natdave.github.io/images/headshot.jpg"
 NatDave is a transportation engineering researcher and engineer dedicated to shaping the next generation of intelligent, efficient, and sustainable mobility systems. His work spans traffic signal optimization, AI-powered transportation solutions, active mobility advocacy, and transit operations management, ensuring cities are more connected, resilient, and people-friendly.
 
 **Fun fact**:
-NatDave is cycling enthusiast! He has biked thousands of miles in the USA and hundreds more in Canada, the Netherlands, the UK, and other Western European countries.
+NatDave is a cycling enthusiast! He has biked thousands of miles in the USA and hundreds more in Canada, the Netherlands, the UK, and other Western European countries. Also, NatDave loves to play the piano.
 
 ## Research Areas  
 
