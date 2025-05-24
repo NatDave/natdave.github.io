@@ -60,7 +60,16 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
+<!-- Filter Toggle -->
+<div id="filter-buttons" style="margin-bottom: 1em;">
+  <button class="filter-btn active" data-category="all">All</button>
+  {% assign categories = site.publications | map: 'category' | uniq | sort %}
+  {% for cat in categories %}
+    <button class="filter-btn" data-category="{{ cat | slugify }}">{{ cat }}</button>
+  {% endfor %}
+</div>
+
+
 {% if site.publication_category %}
   {% for category in site.publication_category %}
     {% assign title_shown = false %}
