@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <style>
-/* Publication Card Styling */
+/* Card Styling */
 .publication-card {
   background: #fff;
   border-left: 4px solid #2a7ae2;
@@ -34,7 +34,6 @@ author_profile: true
   max-width: 100%;
   white-space: normal;
   overflow-wrap: break-word;
-  word-wrap: break-word;
   text-align: left;
 }
 
@@ -87,14 +86,15 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Filter Toggle -->
+<!-- Customize category keys and display names -->
+{% assign custom_categories = 
+  "all:All|manuscripts:Journal Articles|reports: Research Reports|conferences:Conference Presentations|term_papers:Grad. Level Term Papers" | split: "|" %}
+
+<!-- Filter Buttons -->
 <div id="filter-buttons">
-  <button class="filter-btn active" data-category="all">All</button>
-  {% assign categories = site.publications | map: 'category' | uniq | sort %}
-  {% for cat in categories %}
-    {% if cat %}
-      <button class="filter-btn" data-category="{{ cat | slugify }}">{{ cat }}</button>
-    {% endif %}
+  {% for entry in custom_categories %}
+    {% assign parts = entry | split: ":" %}
+    <button class="filter-btn {% if forloop.first %}active{% endif %}" data-category="{{ parts[0] }}">{{ parts[1] }}</button>
   {% endfor %}
 </div>
 
@@ -106,7 +106,7 @@ author_profile: true
   </div>
 {% endfor %}
 
-<!-- JavaScript for Filtering -->
+<!-- JavaScript Filter Logic -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".filter-btn");
