@@ -1,7 +1,7 @@
 ---
 title: "XGBoost-Driven Demand Prediction for Optimized Electric Vehicle Charging Recommendations"
 collection: publications
-category: term_papers
+category: term-papers
 permalink: /publication/ev-charging
 excerpt: "Developed an integrated framework combining predictive modeling and optimization techniques to enhance the efficiency of electric vehicle charging infrastructure. Leveraged the Adaptive Charging Network dataset from Caltech, containing extensive charging session logs and other relevant data."
 date: 2024-10-23
