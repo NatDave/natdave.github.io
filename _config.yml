@@ -75,7 +75,7 @@ publication_category:
     title: 'Research Reports'
   conferences:
     title: 'Conference Papers'
-  term_papers:
+  term-papers:
     title: 'Term Papers'
 
 # Site Settings
