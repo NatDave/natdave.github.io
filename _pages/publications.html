@@ -82,14 +82,14 @@ author_profile: true
         <hr />
         {% assign title_shown = true %}
       {% endunless %}
-      <div class="publication-card">
+      <div class="publication-card" data-category="{{ post.category | slugify }}">
         {% include archive-single.html %}
       </div>
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    <div class="publication-card">
+    <div class="publication-card" data-category="{{ post.category | slugify }}">
       {% include archive-single.html %}
     </div>
   {% endfor %}
