@@ -6,39 +6,42 @@ author_profile: true
 ---
 
 <style>
-/* Ensure the container uses full width */
+/* Publication Card Styling */
 .publication-card {
-  background: #f9f9f9;
-  border-left: 5px solid #0073e6;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Ensure the card stretches full width */
+  background: #fff;
+  border-left: 4px solid #2a7ae2;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  box-sizing: border-box; /* Prevents width issues */
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
 }
 
-/* Ensure parent containers do not constrain width */
+.publication-card:hover {
+  transform: translateY(-2px);
+}
+
 .publication-card h3,
 .publication-card p,
 .publication-card a {
   display: block;
   width: 100%;
-  max-width: 100%; /* Ensures no unnecessary wrapping */
-  white-space: normal; /* Allows natural text flow */
+  max-width: 100%;
+  white-space: normal;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  text-align: left; /* Left-aligned text */
+  text-align: left;
 }
 
-/* Override any restrictive margin rules */
 .publication-card * {
   margin: 0;
   padding: 0;
-  line-height: 1.6; /* Improve readability */
+  line-height: 1.6;
 }
 
 .publication-card a {
@@ -49,6 +52,30 @@ author_profile: true
 
 .publication-card a:hover {
   text-decoration: underline;
+}
+
+/* Filter Buttons */
+#filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.filter-btn {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #0073e6;
+  color: #fff;
 }
 </style>
 
@@ -61,36 +88,45 @@ author_profile: true
 {% include base_path %}
 
 <!-- Filter Toggle -->
-<div id="filter-buttons" style="margin-bottom: 1em;">
+<div id="filter-buttons">
   <button class="filter-btn active" data-category="all">All</button>
   {% assign categories = site.publications | map: 'category' | uniq | sort %}
   {% for cat in categories %}
-    <button class="filter-btn" data-category="{{ cat | slugify }}">{{ cat }}</button>
+    {% if cat %}
+      <button class="filter-btn" data-category="{{ cat | slugify }}">{{ cat }}</button>
+    {% endif %}
   {% endfor %}
 </div>
 
+<!-- Publication Listing -->
+{% for post in site.publications reversed %}
+  {% assign cat = post.category | slugify %}
+  <div class="publication-card" data-category="{{ cat }}">
+    {% include archive-single.html %}
+  </div>
+{% endfor %}
 
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2>
-        <hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      <div class="publication-card" data-category="{{ post.category | slugify }}">
-        {% include archive-single.html %}
-      </div>
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    <div class="publication-card" data-category="{{ post.category | slugify }}">
-      {% include archive-single.html %}
-    </div>
-  {% endfor %}
-{% endif %}
+<!-- JavaScript for Filtering -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".publication-card");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const category = button.getAttribute("data-category");
+
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      cards.forEach(card => {
+        if (category === "all" || card.getAttribute("data-category") === category) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+});
+</script>
