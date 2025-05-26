@@ -7,5 +7,5 @@ excerpt: 'Floating bus stops, adjacent to bike lanes, require bus passengers to 
 date: 2024-08-01
 venue: 'Office of Transportation Planning, Massachusetts Department of Transportation'
 paperurl: 'https://trid.trb.org/View/2490997'
-slidesurl: 'https://natdave.github.io/files/posters/accessible-bus-stop-poster.pdf'
+slidesurl: 'https://natdave.github.io/files/accessible-bus-stop-slides.pdf'
 ---
