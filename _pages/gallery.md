@@ -41,11 +41,8 @@ Highlights from our exciting annual summer school program in The Netherlands.
 <div class="gallery-section">
   <div class="gallery-title">2025</div>
   <div class="gallery-images">
-    {% assign extensions = "JPG,JPEG,jpg,jpeg" | split: "," %}
     {% for i in (1..15) %}
-      {% for ext in extensions %}
-        <img src="/images/holland/2025_netherlands{{ i }}.{{ ext }}" alt="Summer School 2025 {{ i }}" onerror="this.style.display='none';">
-      {% endfor %}
+      <img src="/images/holland/2025_netherlands{{ i }}.jpg" alt="Summer School 2024 {{ i }}">
     {% endfor %}
   </div>
 </div>
