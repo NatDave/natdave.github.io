@@ -2,7 +2,7 @@
 title: "CIVE 5373: Transportation Systems Analysis and Planning"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2023-trans-sys-analysis
+permalink: /teaching/2025-trans-sys-analysis
 venue: "Northeastern University, Boston, MA"
 date: 2025-09-04
 location: "Boston, MA"
