@@ -2,7 +2,7 @@
 title: "CIVE 4554: Highway Design"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2023-statics
+permalink: /teaching/2025-highway-design
 venue: "Northeastern University, Boston, MA"
 date: 2025-09-04
 location: "Boston, MA"
