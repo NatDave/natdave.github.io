@@ -1,5 +1,5 @@
 ---
-title: "CIVE 4566: Design for Sustainable Transportation: Netherlands (TA)"
+title: "CIVE 4566: Design for Sustainable Transportation: Netherlands"
 collection: teaching
 type: "Study abroad program"
 permalink: /teaching/2026-summer-school
