@@ -1,5 +1,5 @@
 ---
-title: "CIVE 4554: Highway Design (TA)"
+title: "CIVE 4554: Highway Design"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2025-highway-design
