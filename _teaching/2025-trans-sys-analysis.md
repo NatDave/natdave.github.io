@@ -1,5 +1,5 @@
 ---
-title: "CIVE 5373: Transportation Systems Analysis and Planning (TA)"
+title: "CIVE 5373: Transportation Systems Analysis and Planning"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2025-trans-sys-analysis
