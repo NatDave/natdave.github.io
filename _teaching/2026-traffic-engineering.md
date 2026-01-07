@@ -1,5 +1,5 @@
 ---
-title: "CIVE 5376: Recitation for Traffic Engineering and Sustainable Urban Street Design"
+title: "CIVE 5376: Traffic Engineering and Sustainable Urban Street Design"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2026-traffic-engineering
