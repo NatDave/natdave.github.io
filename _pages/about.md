@@ -8,10 +8,12 @@ redirect_from:
 social_image: "https://natdave.github.io/images/headshot.jpg"
 ---
 
-NatDave is a transportation researcher and engineer dedicated to shaping the next generation of intelligent, efficient, and sustainable mobility systems. His work spans traffic signal optimization, AI-powered transportation solutions, active and sustainable transportation systems, and transit operations management, ensuring cities are more connected, resilient, and people-friendly.
+NatDave is a transportation researcher, engineer, and policy advisor working at the intersection of technology, infrastructure, and urban mobility. His research spans intelligent traffic signal control, AI-powered transportation solutions, bicycle network connectivity, and transit operations; all aimed at creating cities that are safer, more efficient, and more livable.
+
+As a PhD candidate at Northeastern University and member of the Massachusetts Bicycle and Pedestrian Advisory Board, NatDave bridges cutting-edge research with real-world policy impact. His research work has been funded by USDOT and MassDOT, and he's passionate about building transportation systems that prioritize people over cars.
 
 **Fun facts about NatDave**:
-NatDave is a cycling enthusiast! He has biked thousands of miles in the USA and hundreds more in the Netherlands, Canada, France, the UK, and other Western European countries. Also, NatDave loves to play classical music on his piano during his spare time.
+Beyond the lab, NatDave is an avid cyclist who has ridden thousands of miles across the USA and explored bicycle and public transportation infrastructure in the Netherlands, Switzerland, Luxembourg, Canada, France, the UK, and other parts of Western Europe. When he's not analyzing transportation networks or advocating for better transportation infrastructure, you'll find him at his piano, playing classical music.
 
 ## Research Areas  
 
