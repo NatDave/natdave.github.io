@@ -5,7 +5,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-social_image: "https://natdave.github.io/images/headshot.jpeg"
+social_image: "https://natdave.github.io/images/headshot.jpg"
 ---
 
 NatDave is a transportation researcher, engineer, and policy advisor working at the intersection of technology, infrastructure, and urban mobility. His research spans intelligent traffic signal control, AI-powered transportation solutions, bicycle network connectivity, and transit operations; all aimed at creating cities that are safer, more efficient, and more livable.
