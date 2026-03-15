@@ -7,13 +7,11 @@ redirect_from:
   - /about.html
 social_image: "https://natdave.github.io/images/headshot.jpg"
 ---
+NatDave doesn't study cities from a distance. He rides them, maps them, and pushes to redesign them. PhD candidate at Northeastern with research funded by MassDOT and USDOT. Policy advisor to the Commonwealth of Massachusetts on bicycle and pedestrian infrastructure — appointed by Governor Maura Healey.
 
-NatDave is a transportation researcher, engineer, and policy advisor working at the intersection of technology, infrastructure, and urban mobility. His research spans intelligent traffic signal control, AI-powered transportation solutions, bicycle network connectivity, and transit operations; all aimed at creating cities that are safer, more efficient, and more livable.
+His obsession is transportation systems, and more specifically, making them actually work for people. Intelligent transportation systems, bicycle network connectivity, public transit, AI-powered mobility — the thread running through all of it is the same: cities should be safer, more efficient, and more livable than they currently are.
 
-As a PhD candidate at Northeastern University and member of the Massachusetts Bicycle and Pedestrian Advisory Board, NatDave bridges cutting-edge research with real-world policy impact. His research work has been funded by USDOT and MassDOT, and he's passionate about building transportation systems that prioritize people over cars.
-
-**Fun facts about NatDave**:
-Beyond the lab, NatDave is an avid cyclist who has ridden thousands of miles across the USA and explored bicycle and public transportation infrastructure in the Netherlands, Switzerland, Luxembourg, Canada, France, the UK, and other parts of Western Europe. When he's not analyzing transportation networks or advocating for better transportation infrastructure, you'll find him at his piano, playing classical music.
+Off the clock: he's logged thousands of miles cycling — and riding public transportation — across the US and through Canada, the Netherlands, Switzerland, Luxembourg, England, France, Belgium, and beyond. Less for sport, more because the infrastructure tells you things a dataset can't. When he's not on a bike or riding public transportation in some cool city, he's at the piano.
 
 ## Research Areas  
 
