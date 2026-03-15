@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 social_image: "https://natdave.github.io/images/headshot.jpg"
 ---
-NatDave doesn't study cities from a distance. He rides them, maps them, and pushes to redesign them. PhD candidate at Northeastern with research funded by MassDOT and USDOT. Policy advisor to the Commonwealth of Massachusetts on bicycle and pedestrian infrastructure — appointed by Governor Maura Healey.
+NatDave doesn't study cities from a distance. He rides them, maps them, and pushes to redesign them. PhD candidate at Northeastern with research funded by MassDOT and USDOT. Policy advisor to the Commonwealth of Massachusetts on bicycle and pedestrian infrastructure, appointed by Governor Maura Healey.
 
-His obsession is transportation systems, and more specifically, making them actually work for people. Intelligent transportation systems, bicycle network connectivity, public transit, AI-powered mobility — the thread running through all of it is the same: cities should be safer, more efficient, and more livable than they currently are.
+His obsession is transportation systems, and more specifically, making them actually work for people. Intelligent transportation systems, bicycle network connectivity, public transit, AI-powered mobility. The thread running through all of it is the same: cities should be safer, more efficient, and more livable than they currently are.
 
-Off the clock: he's logged thousands of miles cycling — and riding public transportation — across the US and through Canada, the Netherlands, Switzerland, Luxembourg, England, France, Belgium, and beyond. Less for sport, more because the infrastructure tells you things a dataset can't. When he's not on a bike or riding public transportation in some cool city, he's at the piano.
+Off the clock: he's logged thousands of miles cycling and riding public transportation across the US and through Canada, the Netherlands, Switzerland, Luxembourg, England, France, Belgium, and beyond. Less for sport, more because the infrastructure tells you things a dataset can't. When he's not on a bike or riding public transportation in some cool city, he's at the piano.
 
 ## Research Areas  
 
