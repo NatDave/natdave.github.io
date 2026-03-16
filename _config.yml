@@ -3,7 +3,7 @@ locale                   : "en-US"
 title                    : "NatDave"
 title_separator          : "-"
 name                     : &name "Nathan David Obeng-Amoako"
-description              : &description "PhD Transportation Engineering student at Northeastern University"
+description              : &description "PhD Candidate in Transportation Engineering at Northeastern University"
 url                      : https://natdave.github.io
 baseurl                  : ""
 repository               : "natdave.github.io"
