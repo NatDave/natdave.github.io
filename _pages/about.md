@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 social_image: "https://natdave.github.io/images/headshot.jpg"
 ---
-NatDave doesn't study cities from a distance. He rides them, maps them, and pushes to redesign them. PhD candidate at Northeastern with research funded by MassDOT and USDOT. Policy advisor to the Commonwealth of Massachusetts on bicycle and pedestrian infrastructure, appointed by Governor Maura Healey.
+NatDave doesn't study cities from a distance. He rides them, maps them, and pushes to redesign them. Transportation Engineering PhD Candidate at Northeastern University with past research funded by MassDOT and USDOT. Policy advisor to the Commonwealth of Massachusetts on bicycle and pedestrian infrastructure (appointed by Governor Maura Healey).
 
 His obsession is transportation systems, and more specifically, making them actually work for people. Intelligent transportation systems, bicycle network connectivity, public transit, AI-powered mobility. The thread running through all of it is the same: cities should be safer, more efficient, and more livable than they currently are.
 
