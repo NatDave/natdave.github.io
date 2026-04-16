@@ -5,7 +5,7 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
-last_updated: "January 2026"
+last_updated: "April 2026"
 ---
 
 {% include base_path %}
