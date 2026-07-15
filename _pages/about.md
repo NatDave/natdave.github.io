@@ -7,11 +7,13 @@ redirect_from:
   - /about.html
 social_image: "https://natdave.github.io/images/headshot.jpg"
 ---
-NatDave doesn't study cities from a distance. He rides them, maps them, and pushes to redesign them. Transportation Engineering PhD Candidate at Northeastern University with past research funded by MassDOT and USDOT. Policy advisor to the Commonwealth of Massachusetts on bicycle and pedestrian infrastructure (appointed by Governor Maura Healey).
+Transportation Engineering PhD Candidate at Northeastern University with past/current research funded by MassDOT, USDOT, and StreetIQ LLC (an AI-powered infrastructure intelligence platform). Policy advisor to the Commonwealth of Massachusetts on bicycle and pedestrian infrastructure (appointed by Governor Maura Healey).
 
-His obsession is transportation systems, and more specifically, making them actually work for people. Intelligent transportation systems, bicycle network connectivity, public transit, AI-powered mobility. The thread running through all of it is the same: cities should be safer, more efficient, and more livable than they currently are.
+Been riding, mapping, building simulations, and pushing to redesign transportation systems. I want cities should be safer, more efficient, and more livable than they currently are.
 
-Off the clock: he's logged thousands of miles cycling and riding public transportation across the US and through Canada, the Netherlands, Switzerland, Luxembourg, England, France, Belgium, and beyond. Less for sport, more because the infrastructure tells you things a dataset can't. When he's not on a bike or riding public transportation in some cool city, he's at the piano.
+I’ve logged thousands of miles cycling and riding public transportation across the US and through Canada, much of Western Europe, and beyond. Less for sport, more because the infrastructure tells you things a dataset can’t.
+
+I like to play the piano for leisure.
 
 ## Research Areas  
 
