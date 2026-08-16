@@ -40,6 +40,8 @@
 
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'publications' and post.category == 'conferences' %}
+          <p>Presented at <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}
@@ -63,7 +65,7 @@
     {% elsif post.paperurl %}
       <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
     {% elsif post.slidesurl %}
-      <p>Download <a href="{{ post.slidesurl }}">Download Slides</a></p></p>
+      <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% endif %}
 
   </article>
