@@ -38,20 +38,13 @@ Explore images and visuals from some of our events.
 ## Summer School
 Highlights from our exciting annual summer school program in The Netherlands.
 
+{% for section in site.data.gallery %}
 <div class="gallery-section">
-  <div class="gallery-title">2025</div>
+  <div class="gallery-title">{{ section.year }}</div>
   <div class="gallery-images">
-    {% for i in (1..15) %}
-      <img src="/images/holland/2025_netherlands{{ i }}.jpg" alt="Summer School 2024 {{ i }}">
+    {% for photo in section.photos %}
+      <img src="/images/holland/{{ photo.file }}" alt="{{ photo.alt }}" loading="lazy">
     {% endfor %}
   </div>
 </div>
-
-<div class="gallery-section">
-  <div class="gallery-title">2024</div>
-  <div class="gallery-images">
-    {% for i in (1..15) %}
-      <img src="/images/holland/2024_netherlands{{ i }}.jpg" alt="Summer School 2024 {{ i }}">
-    {% endfor %}
-  </div>
-</div>
+{% endfor %}

@@ -1,0 +1,62 @@
+# Summer school photo gallery, newest year first.
+#
+# To add a photo: drop the image in images/holland/ and add a `file` + `alt`
+# entry below. To remove one, delete its entry here and the image file.
+# The gallery page renders whatever is listed here, so nothing else needs editing.
+
+- year: 2026
+  photos:
+    - file: 2026-cohort-group-photo-dutch-windmill.jpg
+      alt: "The program cohort posing together in front of a traditional Dutch windmill beside a canal."
+    - file: 2026-student-group-dutch-brick-street.jpg
+      alt: "A group of participants on a brick-paved sidewalk in front of Dutch townhouses during a walking tour."
+    - file: 2026-group-breakfast-before-field-visit.jpg
+      alt: "Participants sharing breakfast around long tables in a common room before a field visit."
+
+- year: 2025
+  photos:
+    - file: 2025-intercity-train-station-platform.jpg
+      alt: "A Dutch intercity train at a covered station platform as a cyclist rides past waiting travelers."
+    - file: 2025-tram-turning-onto-brick-street.jpg
+      alt: "A city tram turning onto a brick street lined with historic gabled buildings and parked bicycles."
+    - file: 2025-group-photo-gabion-noise-wall.jpg
+      alt: "Program participants sitting on top of a stone-filled gabion noise barrier with their bicycles parked below."
+    - file: 2025-guided-site-visit-briefing.jpg
+      alt: "A guide in a high-visibility vest explaining a site to a participant during an outdoor field visit."
+    - file: 2025-tram-tracks-at-dusk.jpg
+      alt: "Tram tracks and overhead catenary wires converging along a city street at dusk."
+    - file: 2025-light-rail-tram-at-stop.jpg
+      alt: "A light rail tram arriving at a street-side stop with its route sign and platform marker visible."
+    - file: 2025-cyclists-on-red-asphalt-bike-path.jpg
+      alt: "Participants cycling single file along a tree-lined red asphalt bike path, one rider with arms outstretched."
+    - file: 2025-tram-interior-empty-seats.jpg
+      alt: "The interior of a nearly empty tram with yellow grab handles, blue seats, and ticket validators."
+    - file: 2025-crowded-sidewalk-bike-parking.jpg
+      alt: "Bicycles parked densely along a city sidewalk beneath a no-parking sign, with an ornamental gateway arch behind."
+
+- year: 2024
+  photos:
+    - file: 2024-participants-jumping-playground-swings.jpg
+      alt: "Participants playing on wooden swings in a sandy neighborhood playground, with bicycles parked nearby."
+    - file: 2024-transit-depot-visit-poster-display.jpg
+      alt: "A participant beside a technician cutout at a transit operator depot display of posters and diagrams."
+    - file: 2024-group-meal-beach-cafe.jpg
+      alt: "Program participants sharing a meal around a long wooden table at an open-air beach cafe."
+    - file: 2024-rental-bikes-lined-delft-station.jpg
+      alt: "A row of rental bicycles lined up in front of a historic railway station building."
+    - file: 2024-luggage-cart-ride-station-plaza.jpg
+      alt: "Two participants with a luggage trolley outside a glass-clad station building."
+    - file: 2024-rope-climbing-frame-urban-park.jpg
+      alt: "A person climbing a rope net on a wooden play structure in a leafy urban park beside a city street."
+    - file: 2024-cyclist-on-bridge-cycle-track.jpg
+      alt: "A cyclist riding across a red asphalt cycle track on a cable-stayed bridge over a canal."
+    - file: 2024-rainbow-painted-cycle-street.jpg
+      alt: "Participants standing with bicycles beside a rainbow-painted cycle street next to colorful campus buildings."
+    - file: 2024-ov-fiets-bike-share-storage.jpg
+      alt: "Rows of blue and yellow OV-fiets rental bicycles parked inside an underground station bicycle facility."
+    - file: 2024-group-photo-playground-with-bikes.jpg
+      alt: "Participants gathered on a wooden playground structure with their rental bicycles parked around it."
+    - file: 2024-two-riders-sharing-bike-canal.jpg
+      alt: "Two people riding one bicycle along a brick cycle path beside a city canal."
+    - file: 2024-bike-tour-stop-car-wall-artwork.jpg
+      alt: "Participants pausing with their bicycles beside a facade decorated with a car mounted above painted parking markings."
