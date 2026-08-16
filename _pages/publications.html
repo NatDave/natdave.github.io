@@ -43,6 +43,14 @@ author_profile: true
   line-height: 1.6;
 }
 
+/* Links inside a paragraph (the Download Paper / Download Slides pair, and
+   any links in an excerpt) must stay inline. The block rule above would
+   otherwise stack them and strand the " | " separator on its own line. */
+.publication-card p a {
+  display: inline;
+  width: auto;
+}
+
 .publication-card a {
   color: #0073e6;
   text-decoration: none;
@@ -89,7 +97,7 @@ author_profile: true
 
 <!-- Customize category keys and display names -->
 {% assign custom_categories = 
-  "all:All|manuscripts:Journal Articles|reports: Research Reports|conferences:Conference Presentations|term-papers:Term Papers" | split: "|" %}
+  "all:All|manuscripts:Journal Articles|reports:Research Reports|conferences:Conference Presentations" | split: "|" %}
 
 <!-- Filter Buttons -->
 <div id="filter-buttons">

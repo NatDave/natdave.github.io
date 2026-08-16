@@ -44,7 +44,6 @@
           {% case post.category %}
             {% when 'conferences' %}{% assign venue_prefix = 'Presented at' %}
             {% when 'reports' %}{% assign venue_prefix = 'Prepared for' %}
-            {% when 'term-papers' %}{% assign venue_prefix = 'Term paper,' %}
             {% else %}{% assign venue_prefix = 'Published in' %}
           {% endcase %}
           <p>{{ venue_prefix }} <i>{{ post.venue | strip }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
