@@ -1,0 +1,17 @@
+{%- comment -%}
+Renders the venue line for a publication, e.g. "Presented at <venue>, 2026".
+
+Shared by the publications listing (archive-single.html) and the individual
+publication page (single.html) so the two can never disagree about how an item
+is described. Pass the item in:
+
+  {% include publication-venue.html item=post %}   <- listing
+  {% include publication-venue.html item=page %}   <- single page
+{%- endcomment -%}
+{%- assign item = include.item -%}
+{%- case item.category -%}
+  {%- when 'conferences' -%}{%- assign venue_prefix = 'Presented at' -%}
+  {%- when 'reports' -%}{%- assign venue_prefix = 'Prepared for' -%}
+  {%- else -%}{%- assign venue_prefix = 'Published in' -%}
+{%- endcase -%}
+{{ venue_prefix }} <i>{{ item.venue | strip }}</i>, {{ item.date | default: "1900-01-01" | date: "%Y" }}

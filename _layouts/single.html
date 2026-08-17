@@ -36,8 +36,10 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'publications' and page.venue and page.date %}
+          <p>{% include publication-venue.html item=page %}</p>
         {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p>Published in <i>{{ page.venue | strip }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}    
@@ -45,18 +47,32 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% comment %}
+          Publication entries carry their summary in the `excerpt` front matter
+          and usually have no body, which left these pages showing less than the
+          listing page did. Fall back to the excerpt when there is no body.
+        {% endcomment %}
+        {% assign body = content | strip %}
+        {% if page.collection == 'publications' and body == '' and page.excerpt %}
+          <p>{{ page.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        {% endif %}
         {{ content }}
 
-        {% if page.citation and page.paperurl and page.slidesurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.citation and page.paperurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a></p>
-        {% elsif page.citation and page.slidesurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.citation %}
+        {% comment %}
+          Emitted independently so every combination renders. The previous
+          if/elsif chain had no branch for a bare `paperurl`, so journal articles
+          with only a DOI showed no link to the paper at all, and entries with
+          both a paper and slides showed only the slides.
+        {% endcomment %}
+        {% if page.citation %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
-        {% elsif page.slidesurl %}
-          <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
+        {% endif %}
+        {% if page.paperurl or page.slidesurl %}
+          <p style="font-size: smaller">
+            {%- if page.paperurl %}<a href="{{ page.paperurl }}">Download Paper</a>{% endif -%}
+            {%- if page.paperurl and page.slidesurl %} | {% endif -%}
+            {%- if page.slidesurl %}<a href="{{ page.slidesurl }}">Download Slides</a>{% endif -%}
+          </p>
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
@@ -66,7 +82,23 @@ layout: default
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
-        {% include page__taxonomy.html %}
+        {% comment %}
+          For publications, show the human-readable category from
+          site.publication_category rather than the raw slug. The generic
+          taxonomy include linked to /categories/#<slug>, which is a "Posts by
+          Category" archive that contains no anchor for publication categories.
+        {% endcomment %}
+        {% if page.collection == 'publications' %}
+          {% assign category_title = site.publication_category[page.category].title %}
+          {% if category_title %}
+            <p class="page__taxonomy">
+              <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Category: </strong>
+              <span itemprop="keywords">{{ category_title }}</span>
+            </p>
+          {% endif %}
+        {% else %}
+          {% include page__taxonomy.html %}
+        {% endif %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}

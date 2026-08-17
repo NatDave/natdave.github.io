@@ -74,7 +74,7 @@ publication_category:
   reports:
     title: 'Research Reports'
   conferences:
-    title: 'Conference Papers'
+    title: 'Conference Presentations'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
