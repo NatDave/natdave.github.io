@@ -19,6 +19,14 @@ Explore images and visuals from some of our events.
     flex-wrap: wrap;
     gap: 15px;
   }
+  /* Each thumbnail is wrapped in a link to the full-size photo; block display
+     with no line-height stops the theme's inline link styling from adding a
+     stray gap or underline under the image. */
+  .gallery-images a {
+    display: block;
+    line-height: 0;
+    text-decoration: none;
+  }
   .gallery-images img {
     width: 300px;
     height: 200px;
@@ -38,12 +46,20 @@ Explore images and visuals from some of our events.
 ## Summer School
 Highlights from our exciting annual summer school program in The Netherlands.
 
+{% comment %}
+  Thumbnails in images/holland/thumbs/ are 600x400 (2x the CSS display box, so
+  they stay sharp on retina screens) and cut this page from ~18 MB to ~1.5 MB.
+  Each one links to the full-resolution original, which is otherwise
+  unreachable. Regenerate thumbs after adding a photo - see _data/gallery.yml.
+{% endcomment %}
 {% for section in site.data.gallery %}
 <div class="gallery-section">
   <div class="gallery-title">{{ section.year }}</div>
   <div class="gallery-images">
     {% for photo in section.photos %}
-      <img src="/images/holland/{{ photo.file }}" alt="{{ photo.alt }}" loading="lazy">
+      <a href="/images/holland/{{ photo.file }}" target="_blank" rel="noopener" title="View full-size photo">
+        <img src="/images/holland/thumbs/{{ photo.file }}" alt="{{ photo.alt }}" width="300" height="200" loading="lazy" decoding="async">
+      </a>
     {% endfor %}
   </div>
 </div>
