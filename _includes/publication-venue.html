@@ -14,4 +14,13 @@ is described. Pass the item in:
   {%- when 'reports' -%}{%- assign venue_prefix = 'Prepared for' -%}
   {%- else -%}{%- assign venue_prefix = 'Published in' -%}
 {%- endcase -%}
+{%- comment -%}
+  An unpublished manuscript must never read as "Published in <journal>". Setting
+  status: under-review in the front matter switches the wording and the year is
+  dropped, since a submission has no publication year.
+{%- endcomment -%}
+{%- if item.status == 'under-review' -%}
+Under review at <i>{{ item.venue | strip }}</i>
+{%- else -%}
 {{ venue_prefix }} <i>{{ item.venue | strip }}</i>, {{ item.date | default: "1900-01-01" | date: "%Y" }}
+{%- endif -%}
