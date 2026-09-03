@@ -5,10 +5,10 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
-last_updated: "July 2026"
+last_updated: "September 2026"
 cv_file: "https://natdave.github.io/files/NatDaveCV.pdf"
 cv_pages: 6
-cv_size: "303 KB"
+cv_size: "314 KB"
 ---
 
 {% include base_path %}
