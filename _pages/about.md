@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 social_image: "https://natdave.github.io/images/headshot.jpg"
 ---
-Transportation Engineering PhD Candidate at Northeastern University with past research funded by USDOT and MassDOT. Policy advisor to the Commonwealth of Massachusetts on bicycle and pedestrian infrastructure (appointed by Governor Maura Healey).
+Transportation Engineering PhD Candidate at Northeastern University with past/current research funded by USDOT, MassDOT, and StreetIQ LLC (an AI-powered infrastructure intelligence platform). Policy advisor to the Commonwealth of Massachusetts on bicycle and pedestrian infrastructure (appointed by Governor Maura Healey).
 
 Been riding, mapping, building simulations, and pushing to redesign transportation systems. I want cities to be safer, more efficient, and more livable than they currently are.
 
