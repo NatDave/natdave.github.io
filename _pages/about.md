@@ -9,7 +9,7 @@ social_image: "https://natdave.github.io/images/headshot.jpg"
 ---
 I'm a transportation Engineering PhD Candidate at Northeastern University with past/current research funded by USDOT, MassDOT, and StreetIQ LLC (an AI-powered infrastructure intelligence platform). I also serve as a policy advisor to the Commonwealth of Massachusetts on bicycle and pedestrian infrastructure (appointed by Governor Maura Healey).
 
-I've been riding, mapping, building simulations, and pushing to redesign transportation systems. I want cities to be safer, more efficient, and more livable than they currently are.
+I've been riding, mapping, building digital twins/simulations, and pushing to redesign transportation systems. I want cities to be safer, more efficient, and more livable than they currently are.
 
 I’ve logged thousands of miles cycling and riding public transportation across the US and through Canada, much of Western Europe, and beyond. Less for sport, more because the infrastructure tells you things a dataset can’t.
 
