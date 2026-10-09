@@ -1,0 +1,308 @@
+{%- comment -%}
+  Homepage layout. A standalone document rather than an extension of default.html:
+  it keeps the theme's SEO tags, favicon and analytics, but not main.css, the
+  masthead or the author sidebar, so its design cannot leak into other pages.
+
+  All text comes from data, so the page can be edited without touching HTML:
+    _data/home.yml          headline, credentials, research areas, education, contact
+    _data/news.yml          Recent news (first five shown)
+    _pages/about.md         the bio, rendered as {{ content }}
+    _publications/*.md      entries with `featured: true` become Selected publications
+    _config.yml author      name, avatar, email and profile links
+    _data/navigation.yml    the nav links, shared with the theme's masthead
+{%- endcomment -%}
+{% include base_path %}
+{%- assign home = site.data.home -%}
+{%- assign author = site.author -%}
+{%- assign name_parts = author.name | split: " " -%}
+{%- assign family_name = name_parts | last -%}
+{%- assign given_names = name_parts | pop | join: " " -%}
+{%- assign build_month = site.time | date: "%Y-%m" -%}
+{%- assign featured = site.publications | where: "featured", true | sort: "date" | reverse -%}
+{%- assign cv_page = site.pages | where: "permalink", "/cv/" | first -%}
+{%- assign page_description = page.description | default: home.lead | strip_html | strip_newlines | escape -%}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0, 2 | default: 'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% include seo.html %}
+<meta name="description" content="{{ page_description }}">
+<meta property="og:description" content="{{ page_description }}">
+{% if page.social_image %}<meta property="og:image" content="{{ page.social_image }}">{% endif %}
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }} Feed" href="{{ '/feed.xml' | relative_url }}">
+{% include head/icons.html %}
+<script>
+  // Apply a saved theme before first paint so the page never flashes the wrong one.
+  (function () { try { var t = localStorage.getItem('natdave-theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
+<link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+{% include analytics-gtag.html %}
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-landmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 10v8m4.67-8v8m4.66-8v8M19 10v8M3 10l9-6 9 6z"/></symbol>
+    <symbol id="i-beaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6m-5 0v6.4L4.7 18.6A1.6 1.6 0 0 0 6.1 21h11.8a1.6 1.6 0 0 0 1.4-2.4L14 9.4V3M7.2 15h9.6"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.6 13.9 7.5 22l4.5-2.6 4.5 2.6-1.1-8.1"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></symbol>
+    <symbol id="i-scholar" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm-7 9.18v4L12 20l7-3.82v-4L12 16l-7-3.82z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zm0 0v5h5M9 13h6m-6 4h6"/></symbol>
+    <symbol id="i-slides" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18M4.5 4v10a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V4M12 16v4m-4 0h8"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2m0 15v2M4.6 4.6l1.4 1.4m12 12 1.4 1.4M2.5 12h2m15 0h2M4.6 19.4 6 18M18 6l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.6 6.6 0 0 0 9.7 9.7z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        {%- for link in site.data.navigation.main %}
+        <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    <button class="icon-btn theme-btn" type="button" id="theme-btn" aria-label="Switch between light and dark theme">
+      <svg class="icon i-sun"><use href="#i-sun"/></svg><svg class="icon i-moon"><use href="#i-moon"/></svg>
+    </button>
+    <button class="icon-btn menu-btn" type="button" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <svg class="icon"><use href="#i-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="hero-wrap" id="top">
+    <section class="wrap hero" aria-labelledby="hero-name">
+      <div>
+        <p class="eyebrow">{{ home.eyebrow }}</p>
+        <h1 id="hero-name">{{ given_names }}<br><span class="nowrap">{{ family_name }}</span></h1>
+        <p class="lead">{{ home.lead }}</p>
+        <ul class="creds">
+          {%- for cred in home.credentials %}
+          <li><svg class="icon"><use href="#i-{{ cred.icon }}"/></svg><span>{{ cred.text | escape }}</span></li>
+          {%- endfor %}
+        </ul>
+        <div class="cta">
+          <a class="btn btn-primary" href="{{ '/cv/' | relative_url }}"><svg class="icon"><use href="#i-file"/></svg>View CV</a>
+          <a class="btn btn-ghost" href="#publications">Selected publications</a>
+          <div class="social">
+            {%- if author.email %}
+            <a href="mailto:{{ author.email }}" aria-label="Email" title="Email"><svg class="icon"><use href="#i-mail"/></svg></a>
+            {%- endif %}
+            {%- if author.googlescholar %}
+            <a href="{{ author.googlescholar }}" aria-label="Google Scholar" title="Google Scholar"><svg class="icon"><use href="#i-scholar"/></svg></a>
+            {%- endif %}
+            {%- if author.github %}
+            <a href="https://github.com/{{ author.github }}" aria-label="GitHub" title="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
+            {%- endif %}
+            {%- if author.linkedin %}
+            <a href="https://www.linkedin.com/in/{{ author.linkedin }}/" aria-label="LinkedIn" title="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+            {%- endif %}
+          </div>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="{{ author.avatar | prepend: '/images/' | relative_url }}" alt="Portrait of {{ author.name }}" width="640" height="640">
+        {%- if author.location %}
+        <figcaption><svg class="icon"><use href="#i-pin"/></svg>{{ author.location }}</figcaption>
+        {%- endif %}
+      </figure>
+    </section>
+  </div>
+
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div class="prose">
+        <h2 class="section-title" id="about-title">About</h2>
+        {{ content }}
+      </div>
+      {%- if site.data.news %}
+      <aside class="news" aria-labelledby="news-title">
+        <h3 id="news-title">Recent news</h3>
+        <ol>
+          {%- for item in site.data.news limit: 5 %}
+          <li><time datetime="{{ item.date }}">{{ item.date | append: '-01' | date: '%b %Y' }}</time><p>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% if item.date > build_month %} <span class="tag tag-upcoming">Upcoming</span>{% endif %}</p></li>
+          {%- endfor %}
+        </ol>
+      </aside>
+      {%- endif %}
+    </div>
+  </section>
+
+  <section class="section alt" id="research" aria-labelledby="research-title">
+    <div class="wrap">
+      <div class="section-head"><h2 class="section-title" id="research-title">Research areas</h2></div>
+      <div class="areas">
+        {%- for area in home.research_areas %}
+        <article class="area">
+          <img src="{{ area.image | relative_url }}" alt="" width="800" height="500" loading="lazy">
+          <div class="area-body"><h3>{{ area.title | escape }}</h3><p>{{ area.text | escape }}</p></div>
+        </article>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+
+  {%- if featured.size > 0 %}
+  <section class="section" id="publications" aria-labelledby="pubs-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title" id="pubs-title">Selected publications</h2>
+        <a class="more" href="{{ '/publications/' | relative_url }}">All publications and talks<svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+      <ol class="pubs">
+        {%- for pub in featured %}
+        {%- if pub.status == 'under-review' %}{% assign badge_class = 'review' %}{% assign badge_text = 'Under review' %}
+        {%- elsif pub.category == 'reports' %}{% assign badge_class = 'report' %}{% assign badge_text = 'Research report' %}
+        {%- elsif pub.category == 'conferences' %}{% assign badge_class = 'talk' %}{% assign badge_text = 'Conference talk' %}
+        {%- else %}{% assign badge_class = 'journal' %}{% assign badge_text = 'Journal article' %}{% endif %}
+        <li class="pub">
+          <div class="pub-meta"><span class="badge badge-{{ badge_class }}">{{ badge_text }}</span><span class="year">{{ pub.date | date: '%Y' }}</span></div>
+          <div>
+            <h3 class="pub-title"><a href="{{ pub.url | relative_url }}">{{ pub.title | escape }}</a></h3>
+            {%- if pub.authors %}
+            <p class="pub-authors">{{ pub.authors }}</p>
+            {%- endif %}
+            <p class="pub-venue"><em>{{ pub.venue | strip }}</em></p>
+            <div class="pub-links">
+              {%- if pub.paperurl %}
+              {%- if pub.status == 'under-review' %}{% assign paper_label = 'Manuscript' %}{% assign paper_icon = 'file' %}
+              {%- elsif pub.category == 'reports' %}{% assign paper_label = 'Report' %}{% assign paper_icon = 'file' %}
+              {%- elsif pub.paperurl contains 'doi.org' %}{% assign paper_label = 'DOI' %}{% assign paper_icon = 'external' %}
+              {%- else %}{% assign paper_label = 'Paper' %}{% assign paper_icon = 'file' %}{% endif %}
+              <a class="chip-link" href="{{ pub.paperurl }}"><svg class="icon"><use href="#i-{{ paper_icon }}"/></svg>{{ paper_label }}</a>
+              {%- endif %}
+              {%- if pub.slidesurl %}
+              <a class="chip-link" href="{{ pub.slidesurl }}"><svg class="icon"><use href="#i-slides"/></svg>Slides</a>
+              {%- endif %}
+            </div>
+          </div>
+        </li>
+        {%- endfor %}
+      </ol>
+    </div>
+  </section>
+  {%- endif %}
+
+  <section class="section alt" id="education" aria-labelledby="edu-title">
+    <div class="wrap edu-grid">
+      <div>
+        <h2 class="section-title" id="edu-title">Education</h2>
+        <ol class="tl">
+          {%- for e in home.education %}
+          <li>
+            <span class="tl-date">{{ e.dates }}</span>
+            <h3>{{ e.degree | escape }}</h3>
+            <p>{{ e.school | escape }}</p>
+            {%- if e.note %}
+            <p class="note">{{ e.note | escape }}</p>
+            {%- endif %}
+          </li>
+          {%- endfor %}
+        </ol>
+      </div>
+      <div class="side">
+        <div class="card">
+          <p class="card-label">Curriculum vitae</p>
+          <h3>Full CV{% if cv_page.last_updated %}, updated {{ cv_page.last_updated }}{% endif %}</h3>
+          <p>Research, publications, teaching, service, and awards.</p>
+          <div class="row">
+            <a class="btn btn-primary" href="{{ '/cv/' | relative_url }}"><svg class="icon"><use href="#i-file"/></svg>View CV</a>
+            <a class="btn btn-ghost" href="{{ cv_page.cv_file | default: '/files/NatDaveCV.pdf' }}" download><svg class="icon"><use href="#i-download"/></svg>PDF</a>
+          </div>
+        </div>
+        {%- if home.certification %}
+        <div class="card">
+          <p class="card-label">Certification</p>
+          <h3>{{ home.certification.title | escape }}</h3>
+          <p>{{ home.certification.issuer | escape }}</p>
+          {%- if home.certification.verify_url %}
+          <a class="more" href="{{ home.certification.verify_url }}">Verify credential<svg class="icon"><use href="#i-external"/></svg></a>
+          {%- endif %}
+        </div>
+        {%- endif %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 class="section-title" id="contact-title">Get in touch</h2>
+      {%- if home.contact_line %}
+      <p>{{ home.contact_line | escape }}</p>
+      {%- endif %}
+      {%- if author.email %}
+      <a class="btn btn-primary" href="mailto:{{ author.email }}"><svg class="icon"><use href="#i-mail"/></svg>{{ author.email }}</a>
+      {%- endif %}
+      <div class="social">
+        {%- if author.googlescholar %}
+        <a href="{{ author.googlescholar }}" aria-label="Google Scholar" title="Google Scholar"><svg class="icon"><use href="#i-scholar"/></svg></a>
+        {%- endif %}
+        {%- if author.github %}
+        <a href="https://github.com/{{ author.github }}" aria-label="GitHub" title="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
+        {%- endif %}
+        {%- if author.linkedin %}
+        <a href="https://www.linkedin.com/in/{{ author.linkedin }}/" aria-label="LinkedIn" title="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+        {%- endif %}
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© {{ site.time | date: '%Y' }} {{ author.name }}</span>
+    {%- if author.location %}
+    <span>{{ author.location }}</span>
+    {%- endif %}
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var dark = window.matchMedia('(prefers-color-scheme: dark)');
+    function current() {
+      var t = root.getAttribute('data-theme');
+      return t ? t : (dark.matches ? 'dark' : 'light');
+    }
+    document.getElementById('theme-btn').addEventListener('click', function () {
+      var next = current() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('natdave-theme', next); } catch (e) {}
+    });
+
+    var btn = document.getElementById('menu-btn');
+    var links = document.getElementById('nav-links');
+    btn.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && links.classList.contains('open')) { links.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); btn.focus(); }
+    });
+  })();
+</script>
+</body>
+</html>

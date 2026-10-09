@@ -2,6 +2,7 @@
 title: "Intersections as Barriers to Low-Stress Cycling: Intersection Level of Traffic Stress and Dual-Graph Network Modeling"
 collection: publications
 category: manuscripts
+featured: true
 status: under-review
 permalink: /publication/xlts-intersections-jtg
 excerpt: 'Bicycle network analysis has lacked a method for incorporating intersection crossing stress into routing and accessibility analysis. This paper proposes crossing level of traffic stress (xLTS) criteria for both signalized and unsignalized intersections, merging lanes crossed, traffic volume and speed, crossing islands, and rider characteristics into a gap acceptance model, and introduces a dual-graph network representation so that turning and crossing costs can be modelled directly.'

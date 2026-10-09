@@ -1,0 +1,25 @@
+# Recent news on the homepage, newest first. The homepage shows the first five,
+# so adding an item at the top pushes the oldest one off.
+#
+#   date  "YYYY-MM", quoted. Items dated after the month the site was last built
+#         get an "Upcoming" tag automatically; it clears on the first push after
+#         that month arrives.
+#   text  Markdown: **bold**, [link text](/files/some.pdf)
+
+- date: "2027-01"
+  text: "Presenting the xLTS framework at the **TRB Annual Meeting** in Washington, DC."
+
+- date: "2026-09"
+  text: "Received the **Graduate Scholarship Award** from the Southern New England ITE Section (SENEITE)."
+
+- date: "2026-08"
+  text: "Started building a **Vissim digital twin** of Boston arterial corridors for adaptive signal control, funded by StreetIQ."
+
+- date: "2026-08"
+  text: "Presented xLTS at the **BTR#8 Conference**. [Slides](/files/xlts-intersections-btr8-slides.pdf)"
+
+- date: "2026-06"
+  text: "Submitted the xLTS paper to the **Journal of Transport Geography**. [Manuscript](/files/xlts-intersections-jtg-manuscript.pdf)"
+
+- date: "2026-01"
+  text: "Appointed by Gov. Maura Healey to the **Massachusetts Bicycle & Pedestrian Advisory Board**."

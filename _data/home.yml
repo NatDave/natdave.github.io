@@ -1,0 +1,55 @@
+# Homepage content. Edit the text here; the page layout is _layouts/home.html.
+#
+# Elsewhere:
+#   the bio                  -> _pages/about.md
+#   Recent news              -> _data/news.yml
+#   Selected publications    -> any _publications entry with `featured: true`
+#   name, email, profiles    -> the author block in _config.yml
+
+eyebrow: "PhD Candidate · Transportation Engineering"
+
+lead: "At Northeastern University, I work on transit signal priority, traffic simulation and digital twins, public transit operations, and low-stress bicycle networks."
+
+# icon is one of: landmark, beaker, award
+credentials:
+  - icon: landmark
+    text: "Appointed by Gov. Maura Healey to the Massachusetts Bicycle & Pedestrian Advisory Board"
+  - icon: beaker
+    text: "Research funded by USDOT, MassDOT, and StreetIQ"
+  - icon: award
+    text: "Engineer-in-Training (E.I.T.), Massachusetts"
+
+# Images are 800x500 (16:10). The cards are deliberately not links.
+research_areas:
+  - title: "Traffic Signal Optimization & Smart Transit Priority"
+    text: "Enhancing traffic flow and public transit reliability with smart signal control strategies."
+    image: /images/about/tsp-card.jpg
+  - title: "AI & ML/DL in Transportation"
+    text: "Applying machine learning and AI to real-time traffic management and mobility solutions."
+    image: /images/about/ai-card.jpg
+  - title: "Active Transportation & Sustainability"
+    text: "Promoting cycling and sustainable mobility to create healthier, eco-friendly communities."
+    image: /images/about/bike-card.jpg
+  - title: "Transit Operations & Management"
+    text: "Improving transit efficiency, reliability, and service planning for better urban mobility."
+    image: /images/about/transit-card.jpg
+
+education:
+  - dates: "2023 – present"
+    degree: "Ph.D., Civil Engineering (Transportation)"
+    school: "Northeastern University, Boston, MA"
+    note: "Advisor: Prof. Peter Furth · Expected 2028"
+  - dates: "2023 – 2025"
+    degree: "M.S., Civil Engineering (Transportation)"
+    school: "Northeastern University, Boston, MA"
+  - dates: "2018 – 2022"
+    degree: "B.Sc., Civil Engineering"
+    school: "Kwame Nkrumah University of Science and Technology (KNUST), Kumasi, Ghana"
+    note: "Best Graduating Student, Class of 2022"
+
+certification:
+  title: "Engineer-in-Training (EIT) · FE Civil"
+  issuer: "Massachusetts Board of Registration of Professional Engineers and Land Surveyors"
+  verify_url: "https://www.credly.com/badges/35f81516-e8ec-40a4-ad6c-beb2d54a2894"
+
+contact_line: "Research collaborations, talks, or questions about my work."
