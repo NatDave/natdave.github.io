@@ -8,7 +8,6 @@ redirect_from:
 last_updated: "September 2026"
 cv_file: "https://natdave.github.io/files/NatDaveCV.pdf"
 cv_pages: 6
-cv_size: "314 KB"
 ---
 
 {% include base_path %}
@@ -85,7 +84,7 @@ cv_size: "314 KB"
   /* Hidden by default and revealed by the script below, only on wide screens.
      Two reasons this is JS-gated rather than CSS-gated:
        1. A display:none iframe still downloads its src, so a CSS-only hide
-          would cost phone users the full 303 KB for a viewer they never see.
+          would cost phone users the whole PDF for a viewer they never see.
        2. The frame must have its final width before the PDF viewer initialises.
           With loading="lazy" it did not, and the viewer then mis-computed its
           zoom (137%, then 102%) and clipped the right edge of the document.
@@ -115,7 +114,8 @@ cv_size: "314 KB"
 <div class="cv-meta">
   <span class="cv-chip">Last updated <strong>{{ page.last_updated }}</strong></span>
   <span class="cv-chip">{{ page.cv_pages }} pages</span>
-  <span class="cv-chip">PDF &middot; {{ page.cv_size }}</span>
+  <!-- No file-size chip: it was typed in by hand, so it went stale every time a
+       new PDF was uploaded through GitHub's web editor. -->
 </div>
 
 <div class="cv-actions">
