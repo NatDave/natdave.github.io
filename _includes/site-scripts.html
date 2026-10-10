@@ -1,0 +1,62 @@
+<script>
+  /* Theme toggle, mobile menu and "copy citation". Block comments only, so
+     nothing here can break if the HTML is ever minified onto one line. */
+  (function () {
+    var root = document.documentElement;
+    var themeColor = document.querySelector('meta[name="theme-color"]');
+    function setTheme(t) {
+      if (t === 'dark') { root.setAttribute('data-theme', 'dark'); } else { root.removeAttribute('data-theme'); }
+      if (themeColor) { themeColor.setAttribute('content', t === 'dark' ? '#0b1020' : '#ffffff'); }
+      try { localStorage.setItem('natdave-theme', t); } catch (e) {}
+    }
+    if (root.getAttribute('data-theme') === 'dark' && themeColor) { themeColor.setAttribute('content', '#0b1020'); }
+    var themeBtn = document.getElementById('theme-btn');
+    if (themeBtn) {
+      themeBtn.addEventListener('click', function () {
+        setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+      });
+    }
+
+    var menuBtn = document.getElementById('menu-btn');
+    var links = document.getElementById('nav-links');
+    if (menuBtn && links) {
+      menuBtn.addEventListener('click', function () {
+        var open = links.classList.toggle('open');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && links.classList.contains('open')) {
+          links.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+          menuBtn.setAttribute('aria-label', 'Open menu');
+          menuBtn.focus();
+        }
+      });
+    }
+
+    Array.prototype.forEach.call(document.querySelectorAll('.copy-btn'), function (btn) {
+      btn.addEventListener('click', function () {
+        var source = document.querySelector(btn.getAttribute('data-copy'));
+        var label = btn.querySelector('span');
+        if (!source) { return; }
+        var text = source.innerText.trim();
+        function done() {
+          if (!label) { return; }
+          label.textContent = 'Copied';
+          setTimeout(function () { label.textContent = 'Copy citation'; }, 1800);
+        }
+        function fallback() {
+          var area = document.createElement('textarea');
+          area.value = text; area.setAttribute('readonly', ''); area.style.position = 'fixed'; area.style.opacity = '0';
+          document.body.appendChild(area); area.select();
+          try { document.execCommand('copy'); done(); } catch (e) {}
+          document.body.removeChild(area);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, fallback);
+        } else { fallback(); }
+      });
+    });
+  })();
+</script>

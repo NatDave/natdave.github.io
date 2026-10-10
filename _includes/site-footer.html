@@ -1,0 +1,20 @@
+{%- assign author = site.author -%}
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© {{ site.time | date: '%Y' }} {{ author.name }}{% if author.location %} · {{ author.location }}{% endif %}</span>
+    <div class="social">
+      {%- if author.email %}
+      <a href="mailto:{{ author.email }}" aria-label="Email" title="Email"><svg class="icon"><use href="#i-mail"/></svg></a>
+      {%- endif %}
+      {%- if author.googlescholar %}
+      <a href="{{ author.googlescholar }}" aria-label="Google Scholar" title="Google Scholar"><svg class="icon"><use href="#i-scholar"/></svg></a>
+      {%- endif %}
+      {%- if author.github %}
+      <a href="https://github.com/{{ author.github }}" aria-label="GitHub" title="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
+      {%- endif %}
+      {%- if author.linkedin %}
+      <a href="https://www.linkedin.com/in/{{ author.linkedin }}/" aria-label="LinkedIn" title="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+      {%- endif %}
+    </div>
+  </div>
+</footer>

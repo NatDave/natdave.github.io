@@ -1,0 +1,10 @@
+{%- comment -%}
+  Type badge for a publication: {% include pub-badge.html pub=post %}
+  An entry with status: under-review is labelled as such whatever its category.
+{%- endcomment -%}
+{%- assign badge_pub = include.pub -%}
+{%- if badge_pub.status == 'under-review' -%}{%- assign badge_class = 'review' -%}{%- assign badge_text = 'Under review' -%}
+{%- elsif badge_pub.category == 'reports' -%}{%- assign badge_class = 'report' -%}{%- assign badge_text = 'Research report' -%}
+{%- elsif badge_pub.category == 'conferences' -%}{%- assign badge_class = 'talk' -%}{%- assign badge_text = 'Conference talk' -%}
+{%- else -%}{%- assign badge_class = 'journal' -%}{%- assign badge_text = 'Journal article' -%}{%- endif -%}
+<span class="badge badge-{{ badge_class }}">{{ badge_text }}</span>

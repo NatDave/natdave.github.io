@@ -2,140 +2,42 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-author_profile: true
 ---
-
-<style>
-/* Card Styling */
-.publication-card {
-  background: #fff;
-  border-left: 4px solid #2a7ae2;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  box-sizing: border-box;
-  transition: transform 0.2s ease;
-}
-
-.publication-card:hover {
-  transform: translateY(-2px);
-}
-
-.publication-card h3,
-.publication-card p,
-.publication-card a {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  white-space: normal;
-  overflow-wrap: break-word;
-  text-align: left;
-}
-
-.publication-card * {
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-/* Links inside a paragraph (the Download Paper / Download Slides pair, and
-   any links in an excerpt) must stay inline. The block rule above would
-   otherwise stack them and strand the " | " separator on its own line. */
-.publication-card p a {
-  display: inline;
-  width: auto;
-}
-
-.publication-card a {
-  color: #0073e6;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.publication-card a:hover {
-  text-decoration: underline;
-}
-
-/* Filter Buttons */
-#filter-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  margin-bottom: 1.5em;
-}
-
-.filter-btn {
-  background-color: #e0e0e0;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.9em;
-  transition: background-color 0.3s;
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-  background-color: #0073e6;
-  color: #fff;
-}
-</style>
-
+{%- comment -%}
+  Every _publications entry, newest first, as the same card used on the
+  homepage (see _includes/pub-card.html). Styles live in assets/css/site.css.
+  Filter keys match each entry's `category`; the labels are what visitors see.
+{%- endcomment -%}
 {% if site.author.googlescholar %}
-<div class="wordwrap">
-  You can access my Google Scholar profile <a href="{{site.author.googlescholar}}" target="_blank">here</a>.
-  <br><br>
-</div>
+<p class="archive-intro">You can access my Google Scholar profile <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">here</a>.</p>
 {% endif %}
 
-{% include base_path %}
-
-<!-- Customize category keys and display names -->
-{% assign custom_categories = 
-  "all:All|manuscripts:Journal Articles|reports:Research Reports|conferences:Conference Presentations" | split: "|" %}
-
-<!-- Filter Buttons -->
-<div id="filter-buttons">
-  {% for entry in custom_categories %}
-    {% assign parts = entry | split: ":" %}
-    <button class="filter-btn {% if forloop.first %}active{% endif %}" data-category="{{ parts[0] }}">{{ parts[1] }}</button>
-  {% endfor %}
+{% assign filters = "all:All|manuscripts:Journal Articles|reports:Research Reports|conferences:Conference Presentations" | split: "|" %}
+<div class="filter-chips" role="group" aria-label="Filter publications by type">
+  {%- for filter in filters %}
+  {%- assign parts = filter | split: ":" %}
+  <button class="filter-chip" type="button" data-category="{{ parts[0] }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}">{{ parts[1] }}</button>
+  {%- endfor %}
 </div>
 
-<!-- Publication Listing -->
-{% for post in site.publications reversed %}
-  {% assign cat = post.category | slugify %}
-  <div class="publication-card" data-category="{{ cat }}">
-    {% include archive-single.html %}
-  </div>
-{% endfor %}
+<ol class="pubs" id="pub-list">
+  {%- for post in site.publications reversed %}
+  {% include pub-card.html pub=post show_excerpt=true heading="h2" %}
+  {%- endfor %}
+</ol>
 
-<!-- JavaScript Filter Logic -->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".filter-btn");
-  const cards = document.querySelectorAll(".publication-card");
-
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      const category = button.getAttribute("data-category");
-
-      buttons.forEach(btn => btn.classList.remove("active"));
-      button.classList.add("active");
-
-      cards.forEach(card => {
-        if (category === "all" || card.getAttribute("data-category") === category) {
-          card.style.display = "block";
-        } else {
-          card.style.display = "none";
-        }
+  (function () {
+    var chips = document.querySelectorAll('.filter-chip');
+    var cards = document.querySelectorAll('#pub-list .pub');
+    Array.prototype.forEach.call(chips, function (chip) {
+      chip.addEventListener('click', function () {
+        var category = chip.getAttribute('data-category');
+        Array.prototype.forEach.call(chips, function (c) { c.setAttribute('aria-pressed', String(c === chip)); });
+        Array.prototype.forEach.call(cards, function (card) {
+          card.hidden = !(category === 'all' || card.getAttribute('data-category') === category);
+        });
       });
     });
-  });
-});
+  })();
 </script>

@@ -10,8 +10,9 @@ author_profile: true
 A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
 
 <h2>Pages</h2>
+{% comment %} Only titled pages: site.pages also holds generated files such as the stylesheet and feeds, which would show up as empty cards. {% endcomment %}
 {% for post in site.pages %}
-  {% include archive-single.html %}
+  {% if post.title %}{% include archive-single.html %}{% endif %}
 {% endfor %}
 
 <h2>Posts</h2>

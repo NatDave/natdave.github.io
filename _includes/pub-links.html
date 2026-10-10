@@ -1,0 +1,20 @@
+{%- comment -%}
+  Paper and slides links for a publication: {% include pub-links.html pub=post %}
+  The paper link is labelled by what it points at: a manuscript under review,
+  a report, a DOI, or otherwise a plain paper.
+{%- endcomment -%}
+{%- assign links_pub = include.pub -%}
+{%- if links_pub.paperurl or links_pub.slidesurl %}
+<div class="pub-links{% if include.class %} {{ include.class }}{% endif %}">
+  {%- if links_pub.paperurl %}
+  {%- if links_pub.status == 'under-review' %}{% assign paper_label = 'Manuscript' %}{% assign paper_icon = 'file' %}
+  {%- elsif links_pub.category == 'reports' %}{% assign paper_label = 'Report' %}{% assign paper_icon = 'file' %}
+  {%- elsif links_pub.paperurl contains 'doi.org' %}{% assign paper_label = 'DOI' %}{% assign paper_icon = 'external' %}
+  {%- else %}{% assign paper_label = 'Paper' %}{% assign paper_icon = 'file' %}{% endif %}
+  <a class="chip-link" href="{{ links_pub.paperurl }}"><svg class="icon"><use href="#i-{{ paper_icon }}"/></svg>{{ paper_label }}</a>
+  {%- endif %}
+  {%- if links_pub.slidesurl %}
+  <a class="chip-link" href="{{ links_pub.slidesurl }}"><svg class="icon"><use href="#i-slides"/></svg>Slides</a>
+  {%- endif %}
+</div>
+{%- endif %}

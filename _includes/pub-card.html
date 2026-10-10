@@ -1,0 +1,24 @@
+{%- comment -%}
+  One publication card, shared by the homepage and the Publications page:
+    {% include pub-card.html pub=post %}
+    {% include pub-card.html pub=post show_excerpt=true heading="h2" %}
+  data-category drives the Publications page filter.
+{%- endcomment -%}
+{%- assign card_pub = include.pub -%}
+{%- assign card_heading = include.heading | default: 'h3' -%}
+<li class="pub" data-category="{{ card_pub.category | slugify }}">
+  <div class="pub-meta">{% include pub-badge.html pub=card_pub %}<span class="year">{{ card_pub.date | date: '%Y' }}</span></div>
+  <div>
+    <{{ card_heading }} class="pub-title"><a href="{{ card_pub.url | relative_url }}">{{ card_pub.title | escape }}</a></{{ card_heading }}>
+    {%- if card_pub.authors %}
+    <p class="pub-authors">{{ card_pub.authors }}</p>
+    {%- endif %}
+    {%- if card_pub.venue %}
+    <p class="pub-venue"><em>{{ card_pub.venue | strip }}</em></p>
+    {%- endif %}
+    {%- if include.show_excerpt and card_pub.excerpt %}
+    <p class="pub-excerpt">{{ card_pub.excerpt | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+    {%- endif %}
+    {% include pub-links.html pub=card_pub %}
+  </div>
+</li>
