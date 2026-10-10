@@ -60,6 +60,47 @@ layout: default
   </section>
 </div>
 
+<section class="section alt" id="education" aria-labelledby="edu-title">
+  <div class="wrap edu-grid">
+    <div>
+      <h2 class="section-title" id="edu-title">Education</h2>
+      <ol class="tl">
+        {%- for e in home.education %}
+        <li>
+          <span class="tl-date">{{ e.dates }}</span>
+          <h3>{{ e.degree | escape }}</h3>
+          <p>{{ e.school | escape }}</p>
+          {%- if e.note %}
+          <p class="note">{{ e.note | escape }}</p>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+      </ol>
+    </div>
+    <div class="side">
+      <div class="card">
+        <p class="card-label">Curriculum vitae</p>
+        <h3>Full CV{% if cv_page.last_updated %}, updated {{ cv_page.last_updated }}{% endif %}</h3>
+        <p>Research, publications, teaching, service, and awards.</p>
+        <div class="row">
+          <a class="btn btn-primary" href="{{ '/cv/' | relative_url }}"><svg class="icon"><use href="#i-file"/></svg>View CV</a>
+          <a class="btn" href="{{ cv_page.cv_file | default: '/files/NatDaveCV.pdf' }}" download><svg class="icon"><use href="#i-download"/></svg>PDF</a>
+        </div>
+      </div>
+      {%- if home.certification %}
+      <div class="card">
+        <p class="card-label">Certification</p>
+        <h3>{{ home.certification.title | escape }}</h3>
+        <p>{{ home.certification.issuer | escape }}</p>
+        {%- if home.certification.verify_url %}
+        <a class="more" href="{{ home.certification.verify_url }}">Verify credential<svg class="icon"><use href="#i-external"/></svg></a>
+        {%- endif %}
+      </div>
+      {%- endif %}
+    </div>
+  </div>
+</section>
+
 <section class="section" id="about" aria-labelledby="about-title">
   <div class="wrap about-grid">
     <div class="prose">
@@ -109,48 +150,7 @@ layout: default
 </section>
 {%- endif %}
 
-<section class="section alt" id="education" aria-labelledby="edu-title">
-  <div class="wrap edu-grid">
-    <div>
-      <h2 class="section-title" id="edu-title">Education</h2>
-      <ol class="tl">
-        {%- for e in home.education %}
-        <li>
-          <span class="tl-date">{{ e.dates }}</span>
-          <h3>{{ e.degree | escape }}</h3>
-          <p>{{ e.school | escape }}</p>
-          {%- if e.note %}
-          <p class="note">{{ e.note | escape }}</p>
-          {%- endif %}
-        </li>
-        {%- endfor %}
-      </ol>
-    </div>
-    <div class="side">
-      <div class="card">
-        <p class="card-label">Curriculum vitae</p>
-        <h3>Full CV{% if cv_page.last_updated %}, updated {{ cv_page.last_updated }}{% endif %}</h3>
-        <p>Research, publications, teaching, service, and awards.</p>
-        <div class="row">
-          <a class="btn btn-primary" href="{{ '/cv/' | relative_url }}"><svg class="icon"><use href="#i-file"/></svg>View CV</a>
-          <a class="btn" href="{{ cv_page.cv_file | default: '/files/NatDaveCV.pdf' }}" download><svg class="icon"><use href="#i-download"/></svg>PDF</a>
-        </div>
-      </div>
-      {%- if home.certification %}
-      <div class="card">
-        <p class="card-label">Certification</p>
-        <h3>{{ home.certification.title | escape }}</h3>
-        <p>{{ home.certification.issuer | escape }}</p>
-        {%- if home.certification.verify_url %}
-        <a class="more" href="{{ home.certification.verify_url }}">Verify credential<svg class="icon"><use href="#i-external"/></svg></a>
-        {%- endif %}
-      </div>
-      {%- endif %}
-    </div>
-  </div>
-</section>
-
-<section class="section contact" id="contact" aria-labelledby="contact-title">
+<section class="section alt contact" id="contact" aria-labelledby="contact-title">
   <div class="wrap">
     <h2 class="section-title" id="contact-title">Get in touch</h2>
     {%- if home.contact_line %}
